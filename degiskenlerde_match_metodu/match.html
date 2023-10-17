@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //match(): Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini kontrol eder ve eşleşen değer varsa içeriğin eşleşen kısmından yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür.
+
+            //g: İçeriğin tamamı üzerinde çalışmasını sağlar. (Düzenli ifade)
+            //i: İçeriğin büyük / küçük harf almasına bakmaz. (Düzenli ifade)
+
+            var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir."
+            document.write(metin + "<br>");
+
+            var sonuc1 = metin.match("Javascript");
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = metin.match("JS");
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = metin.match("javascript");
+            document.write(sonuc3 + "<br>");
+
+            var sonuc4 = metin.match(/script/g);
+            document.write(sonuc4 + "<br>");
+
+            var sonuc5 = metin.match(/SCRIPT/i);
+            document.write(sonuc5 + "<br>");
+
+            var sonuc6 = metin.match(/script/gi);
+            document.write(sonuc6 + "<br>");
+
+        </script>
+    </body>
+</html>
