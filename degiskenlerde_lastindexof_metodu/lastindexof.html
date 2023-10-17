@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //lastindexOf(); Değişken içeriğinde parametrik olarak verilen değeri arar ve son eşleşmeyi sağlayan değişken içeriğinin indis / index değerini geriye döndürür.
+
+            var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir.";
+            document.write(metin + "<br>");
+
+            var sonuc1 = metin.lastIndexOf("r");
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = metin.lastIndexOf("script");
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = metin.lastIndexOf("R");
+            document.write(sonuc3 + "<br>");
+
+            var sonuc4 = metin.lastIndexOf("script", 20);
+            document.write(sonuc4 + "<br>");
+
+        </script>
+    </body>
+</html>
