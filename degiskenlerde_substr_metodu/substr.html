@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //substr(): Kendisine verilecek olan parametreler ile tanımlanmış değişken aralığında bulunan değerleri kopyalayarak yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür.
+            //1. Parametre: Başlangıç karakteri sıra numarası
+            //2. Parametre: Kaç karakter alınacağı (karakter sayısı)
+
+            var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir."
+            document.write(metin + "<br>");
+
+            var sonuc1 = metin.substr(11);
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = metin.substr(11, 5);
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = metin.substr(0, 10);
+            document.write(sonuc3 + "<br>");
+
+            var sonuc4 = metin.substr(-15);
+            document.write(sonuc4 + "<br>");
+
+            var sonuc5 = metin.substr(-15, 6);
+            document.write(sonuc5 + "<br>");
+
+
+        </script>
+    </body>
+</html>
