@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //split(): Kendisine parametre olarak tanımlanmış değer doğrultusunda değişen içeriğini bölümleyerek yeni bir dizi oluşturur ve oluşturduğu değeri geriye döndürür.
+
+            var metin = "JS Ders Notları";
+            document.write(typeof(metin) + "<br>");
+            document.write(metin + "<br>");
+            document.write(metin[1] + "<br>");
+
+            var sonuc1 = metin.split();
+            document.write(typeof(sonuc1) + "<br>");
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = metin.split("");    
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = metin.split(" ");    
+            document.write(sonuc3 + "<br>");
+
+            var sonuc3 = metin.split(" ");    
+            document.write(sonuc3 + "<br>");
+            
+            var sonuc4 = metin.split("r");    
+            document.write(sonuc4 + "<br>");
+
+            var sonuc5 = metin.split(" ");    
+            document.write(sonuc5 + "<br>");
+            document.write(sonuc5[2])
+
+        </script>
+    </body>
+</html>
