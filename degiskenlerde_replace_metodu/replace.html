@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //repalce(): Kendisine verilecek olan parametreler doğrultusunda değişken içeriğini kontrol eder ve eşleşen değerlerin değişimini sağşayarak yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür. (Düzenli ifade alabilir.)
+            //1. Parametre: Değişecek içerik
+            //2. Parametre: Güncel içerik
+
+            //g: İçeriğin tamamı üzerinde çalışmasını sağlar. (Düzenli ifade)
+            //i: İçeriğin büyük / küçük harf almasına bakmaz. (Düzenli ifade)
+
+            var metin = "Dünya üzerinde kullanılan en yaygın script dili php'dir.(PhP)"
+            document.write(metin + "<br>");
+
+            var sonuc1 = metin.replace("php", "js");
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = metin.replace("PHP", "JS");
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = metin.replace(/PHP/i,"JS");
+            document.write(sonuc3 + "<br>");
+
+            var sonuc4 = metin.replace(/PHP/gi,"JS");
+            document.write(sonuc4 + "<br>");
+
+            
+
+
+        </script>
+    </body>
+</html>
