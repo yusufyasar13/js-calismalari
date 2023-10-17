@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //localeCompare(): Üzerinde çalışılan değişkene parametrik olarak verilen diğer bir değişken içeriğini tarayıcı diline göre karşılaştırarak sonucu geriye döndürür. (Unicode (evrensel) kod)
+            //Sonuç değerleri
+            //-1: Birinci değişken içeriği, ikinci değişken içeriğinden önce geliyorsa
+            //0: Birinci değişken içeriği, ikinci değişken içeriğine eşitse
+            //1: Birinci değişken içeriği, ikinci değişken içeriğinden sonra geliyorsa
+ 
+            var bir = "abc";
+            var iki = "abd";
+            var üç = "abc";
+            document.write(bir + "<br>");
+            document.write(iki + "<br>");
+
+            var sonuc1 = bir.localeCompare(iki);
+            document.write(sonuc1 + "<br>");
+
+            var sonuc2 = bir.localeCompare(üç);
+            document.write(sonuc2 + "<br>");
+
+            var sonuc3 = iki.localeCompare(bir);
+            document.write(sonuc3 + "<br>");
+
+        </script>
+    </body>
+</html>
