@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //search(): Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini arayarak ilk eşleşmeyi sağlayan değişken içeriğinin indis / index değerini geriye döndürür. (Düzenli ifade olabilir.)
+
+            var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir."
+            document.write(metin + "<br>");
+
+            var islem1= metin.search("script");
+            document.write(islem1 + "<br>");
+
+            var islem2 = metin.search("Script");
+            document.write(islem2 + "<br>");
+
+            var islem3 = metin.search(/Script/i);
+            document.write(islem3 + "<br>");
+
+            var islem4 = metin.search(/SCRIPT/i);
+            document.write(islem4 + "<br>");
+
+        </script>
+    </body>
+</html>
