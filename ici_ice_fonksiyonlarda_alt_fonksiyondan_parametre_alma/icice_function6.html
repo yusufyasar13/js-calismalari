@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            function deneme1(para1){
+                function deneme2(){
+                    document.write(para1 + "<br>");
+                }
+                return deneme2();
+            }
+            deneme1("Yusuf Yaşar");
+            document.write("--------<br>");
+
+
+            var deneme3 = function (para1){
+                var deneme4 = function (){
+                    document.write(para1 + "<br>");
+                }
+                return deneme4();
+            }
+            deneme3("Yusuf Yaşar");
+            document.write("--------<br>");
+
+
+        </script>
+    </body>
+</html>
