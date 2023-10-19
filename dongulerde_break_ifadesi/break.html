@@ -12,29 +12,31 @@
 
             var start = 1;
             while(start <= 10){
-                document.write(start + "<br>");
                 if(start == 8){
                     break;
                 }
+                document.write(start + "<br>");
                 start++
             }
             document.write( "------<br>");
 
+
             var start = 11;
             do{
-                document.write(start + "<br>");
                 if(start == 18){
                     break;
                 }
+                document.write(start + "<br>");
                 start++
             }while(start <= 20)
             document.write( "------<br>");
 
+
             for(var start = 21; start <= 30; start++){
-                document.write(start + "<br>");
                 if(start == 28){
                     break;
                 }
+                document.write(start + "<br>");
             }
             document.write( "------<br>");
 
@@ -42,19 +44,21 @@
             var ornek = ["Red", "Green", "Blue", "Black", "White"];
             var sonuc;
             for(sonuc in ornek){
-                document.write(ornek[sonuc] + "<br>");
-                if(sonuc == 2){
+                if(sonuc == 3){
                     break;
                 }
+                document.write(ornek[sonuc] + "<br>");
             }
             document.write( "------<br>");
+
+
             var renk = {m:"Mor", l:"Lacivert", s:"Sarı"}
             var son;
             for(son in renk){
-                document.write(renk[son] + "<br>");
-                if(son == "l"){
+                if(son == "s"){
                     break;
                 }
+                document.write(renk[son] + "<br>");
             }
 
 
