@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //if = Eğer
+            //else if = Değilse eğer
+            //else = Değilse
+            /*
+            if(koşul / koşullar){
+                ifade / ifadeler;
+            }else if(koşul / koşullar){
+                ifade / ifadeler;
+            }else{
+                ifade / ifadeler;
+            }
+            */
+
+            var deger1 = 5;
+            var deger2 = 10;
+
+            if(deger1 > deger2){
+                document.write("Büyük" + "<br>");
+            }else if(deger1 < deger2){
+                document.write("Küçük" + "<br>");
+            }else{
+                document.write("Eşit" + "<br>");
+            }
+
+
+            var saat = 8;
+
+            if(saat >= 0 && saat <= 5){
+                document.write("İyi Geceler" + "<br>");
+            }else if(saat >= 6 && saat <= 9){
+                document.write("Günaydın" + "<br>");
+            }else if(saat >= 10 && saat <= 16){
+                document.write("İyi Günler" + "<br>");
+            }else if(saat >= 17 && saat <= 23){
+                document.write("İyi Geceler" + "<br>");
+            }else if(saat > 23){
+                document.write("Değer Çok Büyük" + "<br>");
+            }else if(typeof(saat) != "number"){
+                document.write("Değer Rakamsal olmalıdır" + "<br>");
+            }else{
+                document.write("Hata" + "<br>");
+            }
+
+        </script>
+    </body>
+</html>
