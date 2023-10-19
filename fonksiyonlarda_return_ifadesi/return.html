@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+
+            function demo(){
+                var isim = "Yusuf ";
+                var soyisim = "Yaşar";
+                return isim + soyisim;
+            }
+            var sonuc = demo();
+            document.write(sonuc + "<br>");
+            document.write("-------<br>");
+
+
+            function demo2(){
+                var isim = "Yusuf ";
+                var soyisim = "Yaşar";
+                return isim,soyisim;
+            }
+            var sonuc2 = demo2();
+            document.write(sonuc2 + "<br>");
+            document.write("-------<br>");
+
+
+            function demo3(){
+                var isim = "Yusuf ";
+                var soyisim = "Yaşar";
+                return isim;
+                return soyisim;
+            }
+            var sonuc3 = demo3();
+            document.write(sonuc3 + "<br>");
+            document.write("-------<br>");
+
+
+            function demo4(){
+                var isim = "Yusuf ";
+                var soyisim = "Yaşar";
+                var metin = [isim,soyisim];
+                return metin;
+            }
+            var sonuc4 = demo4();
+            document.write(sonuc4 + "<br>");
+            document.write("-------<br>");
+
+
+            function demo5(){
+                return;
+                document.write("Yusuf" + "<br>");
+                document.write("Yaşar" + "<br>");
+            }
+            var sonuc5 = demo5();
+            document.write(sonuc5 + "<br>");
+
+
+        </script>
+    </body>
+</html>
