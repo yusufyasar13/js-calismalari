@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            /*
+            1. parametre = Değişken
+            2. parametre = Dizi / nesne
+           
+
+            for(1. parametre in 2. parametre){
+                Kodlar
+            }
+            */
+
+            var ornek = ["Yusuf", "Yaşar", "JS"];
+            document.write(ornek + "<br>");
+
+            var sonuc;
+            for(sonuc in ornek){
+                document.write(ornek[sonuc] + "<br>");
+            }
+            
+            var sonuc2;
+            for(sonuc2 in ornek){
+                if(ornek[sonuc2] == "JS"){
+                    document.write("Yazılım dili JS'dir.<br>");
+                }else if(ornek[sonuc2] == "Yusuf"){
+                    document.write("Adı Yusuf.<br>");
+                }
+            }
+
+            var ornek2 = {isim:"Yusuf",soyisim:"Yaşar",dil:"JS"};
+            var sonuc3;
+            for(sonuc3 in ornek2){
+                document.write(ornek2[sonuc3] + "<br>")
+            }
+
+
+        </script>
+    </body>
+</html>
