@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //break = Döngüden çıkmak için kullanılır.
+
+            var start = 1;
+            while(start <= 10){
+                document.write(start + "<br>");
+                if(start == 8){
+                    break;
+                }
+                start++
+            }
+            document.write( "------<br>");
+
+            var start = 11;
+            do{
+                document.write(start + "<br>");
+                if(start == 18){
+                    break;
+                }
+                start++
+            }while(start <= 20)
+            document.write( "------<br>");
+
+            for(var start = 21; start <= 30; start++){
+                document.write(start + "<br>");
+                if(start == 28){
+                    break;
+                }
+            }
+            document.write( "------<br>");
+
+
+            var ornek = ["Red", "Green", "Blue", "Black", "White"];
+            var sonuc;
+            for(sonuc in ornek){
+                document.write(ornek[sonuc] + "<br>");
+                if(sonuc == 2){
+                    break;
+                }
+            }
+            document.write( "------<br>");
+            var renk = {m:"Mor", l:"Lacivert", s:"Sarı"}
+            var son;
+            for(son in renk){
+                document.write(renk[son] + "<br>");
+                if(son == "l"){
+                    break;
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
