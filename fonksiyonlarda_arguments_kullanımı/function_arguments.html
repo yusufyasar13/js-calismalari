@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //arguments: Fonksiyona herhangi bir parametre tanımlanmadan bile gelebilecektüm parametre değerlerinin alınmasını sağlar.
+            
+            function ornek(){
+                for(var start = 0; start < arguments.length; start++){
+                    document.write(arguments[start] + "<br>");
+                }
+            }
+            ornek("Yusuf","Yaşar","JS");
+            document.write("------<br>");
+
+
+            function ornek2(){
+                var sonuc = arguments.length
+                document.write(sonuc + "<br>");
+                
+            }
+            ornek2("Yusuf","Yaşar","JS");
+            document.write("------<br>");
+
+
+            function ornek3(isim,soyisim,dil){
+                for(var start = 0; start < arguments.length; start++){
+                    document.write(arguments[start] + "<br>");
+                }
+            }
+            ornek3("Yusuf","Yaşar","JS");
+            document.write("------<br>");
+
+
+            function ornek3(isim,soyisim,dil){
+                for(var start = 0; start < arguments.length; start++){
+                    document.write(arguments[start] + "<br>");
+                }
+            }
+            ornek3("Yusuf","Yaşar","JS",30,40);
+            document.write("------<br>");
+
+        </script>
+    </body>
+</html>
