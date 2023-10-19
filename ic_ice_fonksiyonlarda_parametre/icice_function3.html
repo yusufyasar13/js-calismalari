@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            function deneme1(para1){
+                function deneme2(para2){
+                    function deneme3(para3){
+                        var sonuc =  para1 + para2 + para3;
+                        document.write(sonuc + "<br>");
+                    }
+                    deneme3(6);
+                }
+                deneme2(5);
+            }
+            deneme1(4);
+            document.write("--------<br>");
+
+
+            var deneme4 = function(para1){
+                var deneme5 = function(para2){
+                    var deneme6 = function(para3){
+                        var sonuc =  para1 + para2 + para3;
+                        document.write(sonuc + "<br>");
+                    }
+                    deneme6(6);
+                }
+                deneme5(6);
+            }
+            deneme4(6);
+            document.write("--------<br>");
+
+            var deger1 = 1;
+            var deger2 = 2;
+            var deger3 = 3;
+            function deneme7(para1){
+                function deneme8(para2){
+                    function deneme9(para3){
+                        var sonuc =  para1 + para2 + para3;
+                        document.write(sonuc + "<br>");
+                    }
+                    deneme9(deger3);
+                }
+                deneme8(deger2);
+            }
+            deneme7(deger1);
+            document.write("--------<br>");
+
+            var deger4 = 4;
+            var deger5 = 5;
+            var deger6 = 6;
+            var deneme10 = function(para1){
+                var deneme11 = function(para2){
+                    var deneme12 = function(para3){
+                        var sonuc=  para1 + para2 + para3;
+                        document.write(sonuc + "<br>");
+                    }
+                    deneme12(deger6);
+                }
+                deneme11(deger5);
+            }
+            deneme10(deger4);
+            document.write("--------<br>");
+
+
+        </script>
+    </body>
+</html>
