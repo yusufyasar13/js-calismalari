@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //caller: Fonksiyonu çağıran diğer bir fonksiyon referans olarak alınarak tüm bilgilerinin elde edilmesini sağlar.
+            
+            function esas(){
+                for(var start = 0; start < esas.caller.arguments.length; start++){
+                    document.write(diger.arguments[start] + "<br>");
+                }
+            }
+
+            function diger(isim, soyisim){
+                esas();
+
+            }
+            diger("Yusuf","Yaşar")
+            document.write("------<br>");
+
+        </script>
+    </body>
+</html>
