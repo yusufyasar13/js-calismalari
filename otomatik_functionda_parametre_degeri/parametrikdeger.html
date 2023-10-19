@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            (function text(isim, soyisim = "Yaşar"){
+                document.write("Merhaba " + isim + soyisim + "<br>");
+            })("Yusuf ");
+            document.write("-----------<br>");
+
+
+            var text = function(isim, soyisim = "Yaşar"){
+                document.write("Merhaba " + isim + soyisim + "<br>");
+            }("Yusuf ");
+            document.write("-----------<br>");
+
+
+            var text = function(isim, soyisim = "Yaşar"){
+                document.write("Merhaba " + isim + soyisim + "<br>");
+            }("Yusuf ", "Yunus");
+            document.write("-----------<br>");
+
+
+            var deger1 = "Yusuf ";
+            var deger2 = "Yaşar";
+            (function(isim, soyisim){
+                document.write("Merhaba " + isim + soyisim + "<br>");
+            })(deger1, deger2);
+            document.write("-----------<br>");
+
+
+            var deger1 = "Yusuf ";
+            var deger2 = "Yaşar";
+            var text = function(isim, soyisim){
+                document.write("Merhaba " + isim + soyisim + "<br>");
+            }(deger1, deger2);
+            document.write("-----------<br>");
+
+
+        </script>
+    </body>
+</html>
