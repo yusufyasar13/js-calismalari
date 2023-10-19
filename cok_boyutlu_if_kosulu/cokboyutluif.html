@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //if = Eğer
+            //else if = Değilse eğer
+            //else = Değilse
+            /*
+            if(koşul / koşullar){
+                ifade / ifadeler;
+            }else if(koşul / koşullar){
+                ifade / ifadeler;
+            }else{
+                ifade / ifadeler;
+            }
+            */
+
+        
+            var saat = 8;
+            var veri = typeof saat;
+
+            if(saat >= 0 && saat <= 5 && veri == "number"){
+                if(saat == 0){
+                    document.write("İyi Geceler. Saat şu anda 00:00");
+                }else if(saat == 1){
+                    document.write("İyi Geceler. Saat şu anda 01:00");
+                }else if(saat == 2){
+                    document.write("İyi Geceler. Saat şu anda 02:00");
+                }else if(saat == 3){
+                    document.write("İyi Geceler. Saat şu anda 03:00");
+                }else if(saat == 4){
+                    document.write("İyi Geceler. Saat şu anda 04:00");
+                }else if(saat == 5){
+                    document.write("İyi Geceler. Saat şu anda 05:00");
+                }
+            }else if(saat >= 6 && saat <= 11 && veri == "number"){
+                if(saat == 6){
+                    document.write("Günaydın. Saat şu anda 06:00");
+                }else if(saat == 7){
+                    document.write("Günaydın. Saat şu anda 07:00");
+                }else if(saat == 8){
+                    document.write("Günaydın. Saat şu anda 08:00");
+                }else if(saat == 9){
+                    document.write("Günaydın. Saat şu anda 09:00");
+                }else if(saat == 10){
+                    document.write("Günaydın. Saat şu anda 10:00");
+                }else if(saat == 11){
+                    document.write("Günaydın. Saat şu anda 11:00");
+                }
+            }else if(saat >= 12 && saat <= 18 && veri == "number"){
+                if(saat == 12){
+                    document.write("İyi Günler. Saat şu anda 12:00");
+                }else if(saat == 13){
+                    document.write("İyi Günler. Saat şu anda 13:00");
+                }else if(saat == 14){
+                    document.write("İyi Günler. Saat şu anda 14:00");
+                }else if(saat == 15){
+                    document.write("İyi Günler. Saat şu anda 15:00");
+                }else if(saat == 16){
+                    document.write("İyi Günler. Saat şu anda 16:00");
+                }else if(saat == 17){
+                    document.write("İyi Günler. Saat şu anda 17:00");
+                }else if(saat == 18){
+                    document.write("İyi Günler. Saat şu anda 18:00");
+                }
+            }else if(saat >= 19 && saat <= 23 && veri == "number"){
+                if(saat == 19){
+                    document.write("İyi Akşamlar. Saat şu anda 19:00");
+                }else if(saat == 20){
+                    document.write("İyi Akşamlar. Saat şu anda 20:00");
+                }else if(saat == 21){
+                    document.write("İyi Akşamlar. Saat şu anda 21:00");
+                }else if(saat == 22){
+                    document.write("İyi Akşamlar. Saat şu anda 22:00");
+                }else if(saat == 23){
+                    document.write("İyi Akşamlar. Saat şu anda 23:00");
+                }
+            }else{
+                document.write("Hata!")
+            }
+
+        </script>
+    </body>
+</html>
