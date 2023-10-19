@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //continue = Döngünün o anki işlemini sonlandırarak döngünün başına döner ve işleme devam eder.
+
+            var start = 1;
+            while(start <= 10){
+                if(start == 8){
+                    start++;
+                    continue;
+                }
+                document.write(start + "<br>");
+                start++
+            }
+            document.write( "------<br>");
+
+
+            var start = 1;
+            while(start <= 10){
+                if(start >= 4 && start <= 8){
+                    start++;
+                    continue;
+                }
+                document.write(start + "<br>");
+                start++
+            }
+            document.write( "------<br>");
+
+
+            var start = 11;
+            do{
+                if(start == 18){
+                    start++;
+                    continue;
+                }
+                document.write(start + "<br>");
+                start++
+            }while(start <= 20)
+            document.write( "------<br>");
+
+
+            for(var start = 21; start <= 30; start++){
+                if(start == 28){
+                    continue;
+                }
+                document.write(start + "<br>");
+            }
+            document.write( "------<br>");
+
+
+            var ornek = ["Red", "Green", "Blue", "Black", "White"];
+            var sonuc;
+            for(sonuc in ornek){
+                if(sonuc == 2){
+                    continue;
+                }
+                document.write(ornek[sonuc] + "<br>");
+            }
+            document.write( "------<br>");
+
+
+            var renk = {m:"Mor", l:"Lacivert", s:"Sarı"}
+            var son;
+            for(son in renk){
+                if(son == "l"){
+                    continue;
+                }
+                document.write(renk[son] + "<br>");
+            }
+
+
+        </script>
+    </body>
+</html>
