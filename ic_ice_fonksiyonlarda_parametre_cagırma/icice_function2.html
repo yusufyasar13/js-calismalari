@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            function deneme1(para1){
+                function deneme2(para2){
+                    function deneme3(para3){
+                        return para1 + para2 + para3;
+                    }
+                    return deneme3;
+                }
+                return deneme2;
+            }
+            var sonuc = deneme1(4)(8)(10);
+            document.write(sonuc + "<br>");
+            document.write("--------<br>");
+
+
+            var deneme4 = function(para1){
+                var deneme5 = function(para2){
+                    var deneme6 = function(para3){
+                        return para1 + para2 + para3;
+                    }
+                    return deneme6;
+                }
+                return deneme5;
+            }
+            var sonuc = deneme4(7)(12)(33);
+            document.write(sonuc + "<br>");
+            document.write("--------<br>");
+
+            var deger1 = 1;
+            var deger2 = 2;
+            var deger3 = 3;
+            function deneme7(para1){
+                function deneme8(para2){
+                    function deneme9(para3){
+                        return para1 + para2 + para3;
+                    }
+                    return deneme9;
+                }
+                return deneme8;
+            }
+            var sonuc = deneme7(deger1)(deger2)(deger3);
+            document.write(sonuc + "<br>");
+            document.write("--------<br>");
+
+            var deger4= 4;
+            var deger5 = 5;
+            var deger6 = 6;
+            var deneme10 = function(para1){
+                var deneme11 = function(para2){
+                    var deneme12 = function(para3){
+                        return para1 + para2 + para3;
+                    }
+                    return deneme12;
+                }
+                return deneme11;
+            }
+            var sonuc = deneme10(deger4)(deger5)(deger6);
+            document.write(sonuc + "<br>");
+            document.write("--------<br>");
+
+
+        </script>
+    </body>
+</html>
