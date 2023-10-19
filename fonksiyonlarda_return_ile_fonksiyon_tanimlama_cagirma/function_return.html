@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var kisi = function(){
+                var isim = "Yusuf";
+                return isim;
+            }
+            var sonuc = kisi();
+            document.write(sonuc + "<br>");
+            document.write("------<br>");
+
+
+            var kisi2 = function(){
+                var isim = "Yaşar";
+                return {
+                    ad: function(){
+                        return isim;
+                    }
+
+                };
+            }();
+            var sonuc = kisi2.ad();
+            document.write(sonuc + "<br>");
+            document.write("------<br>");
+
+
+            var kisi3 = function(){
+                var isim = "Yaşar";
+                return {
+                    ad: function(){
+                        return isim;
+                    },
+                    degis: function(yeni){
+                        isim = yeni;
+                    }
+
+                };
+            }();
+            kisi3.degis("JS");
+            var sonuc = kisi3.ad();
+            document.write(sonuc + "<br>");
+            document.write("------<br>");
+
+
+
+        </script>
+    </body>
+</html>
