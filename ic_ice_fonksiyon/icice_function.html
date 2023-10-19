@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            function deneme1(para1, para2){
+                function deneme2(para3, para4){
+                    document.write(para3 + "<br>");
+                    document.write(para4 + "<br>");
+                }
+                return deneme2(para1, para2);
+            }
+            deneme1(3, 6);
+            document.write("--------<br>");
+
+
+            var deneme3 = function(para1, para2){
+                var deneme4 = function(para3, para4){
+                    document.write(para3 + "<br>");
+                    document.write(para4 + "<br>");
+                }
+                return deneme4(para1, para2);
+            }
+            deneme3(4, 8);
+            document.write("--------<br>");            
+            
+
+            function deneme5(para1, para2){
+                function deneme6(para3){
+                    var sonuc = para3 * para3;
+                    document.write(sonuc + "<br>");
+        
+                } 
+                return deneme6(para1) + deneme6(para2);
+            }
+            deneme5(5, 10);
+            document.write("--------<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
