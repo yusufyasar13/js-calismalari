@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            function test(tutar, kdv = 18){
+                var kdvtutari = (tutar / 100) * kdv;
+                var nettutar = tutar + kdvtutari;
+                document.write("Gelen tutar: " + tutar  + "<br>")
+                document.write("KDV tutar: " + kdv  + "<br>")
+                document.write("Net tutar: " + nettutar  + "<br>")
+            }
+            test(1000);
+            document.write("-----------<br>");
+
+
+            function test2(tutar, kdv = 18){
+                var kdvtutari = (tutar / 100) * kdv;
+                var nettutar = tutar + kdvtutari;
+                document.write("Gelen tutar: " + tutar  + "<br>")
+                document.write("KDV tutar: " + kdv  + "<br>")
+                document.write("Net tutar: " + nettutar  + "<br>")
+            }
+            test2(1000, 8);
+            document.write("-----------<br>");
+    
+
+        </script>
+    </body>
+</html>
