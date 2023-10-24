@@ -11,23 +11,20 @@
             //isArray() = Bir değişkenin içeriğinin dizi olup olmadığını kontrol eder. Boolean türünde sonuç dmndürür. (true - false)
 
             var isimler1 = ["Yusuf", "Yaşar", "JS"];
-            document.write(isimler1 + "<br>");
+            document.write(Array.isArray(isimler1) + "<br>");
             
             var isimler2 = "Yusuf, Yaşar, JS";
-            document.write(isimler2 + "<br>");
+            document.write(Array.isArray(isimler2) + "<br>");
 
             var isimler3 = new Array("Yusuf", "Yaşar", "JS");
-            document.write(isimler3 + "<br>");
+            document.write(Array.isArray(isimler3) + "<br>");
 
             var isimler4 = [];
-            document.write(isimler4 + "<br>");
+            document.write(Array.isArray(isimler4) + "<br>");
 
             var isimler4 = new Array();
-            document.write(isimler4 + "<br>");
+            document.write(Array.isArray(isimler4) + "<br>");
 
-            
-    
-            
         </script>
     </body>
 </html>
