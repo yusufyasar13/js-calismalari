@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //find(): Kendisine parametre olarak verilen fonksiyonu dizilerdeki her eleman üzerine tek tek olmak üzere çalıştırır ve dizi içerisinde parametrik olarak verilen değeri arar. İlk eşleşmeyi sağlayan dizi elemanının değerini geriye döndürür.
+            //1. Parametre: Her işlemde elde edilen dizi elemanı.
+            //2. Parametre: Her işlemde elde edilen dizi elemanının indis / index değeri.
+            //3. Parametre: Her tekrar işleminde diziyi tutan değişkenin referansı.
+
+
+            var renk = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            document.write(renk + "<br>");
+            document.write("-----<br>");
+
+            function deneme(eleman, sira, referans){
+                return sira == 5;
+            }
+
+            var islem = renk.find(deneme);
+            document.write(islem + "<br>");
+            document.write("-----<br>");
+
+
+        </script>
+    </body>
+</html>
