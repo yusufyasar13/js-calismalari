@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //splice(): Diziden eleman veya elemanlar silinebilmesini sağlar ve sildiği eleman veya elemanların değerini geriye döndürür. Ayrıca diziye eleman veya elemanlar eklenebilmesini sağlar.
+
+            var esya = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya + "<br>");
+
+            esya.splice(1,2);
+            document.write(esya + "<br>");
+            document.write("------<br>");
+
+
+            var esya2 = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya2 + "<br>");
+
+            esya2.splice(1);
+            document.write(esya2 + "<br>");
+            document.write("------<br>");
+
+
+            var esya3 = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya3 + "<br>");
+
+            esya3.splice(1,0);
+            document.write(esya3 + "<br>");
+            document.write("------<br>");
+
+
+            var esya4 = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya3 + "<br>");
+
+            esya4.splice(1,0,"Yatak","Lamba");
+            document.write(esya4 + "<br>");
+            document.write("------<br>");
+
+
+            var esya5 = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya3 + "<br>");
+
+            esya5.splice(1,2,"Yatak","Lamba");
+            document.write(esya5 + "<br>");
+            document.write("------<br>");
+
+        </script>
+    </body>
+</html>
