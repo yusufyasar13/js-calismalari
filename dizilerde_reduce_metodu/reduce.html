@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //find(): Kendisine parametre olarak verilen fonksiyonu dizilerdeki her eleman üzerine soldan sağa tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak, oluşturduğu değeri geriye döndürür.
+            //1. Parametre: Dizi içerisinde mevcut değer öncesindeki değerlerin toplamı / birleşimi.
+            //2. Parametre: Her işlemde elde edilen dizi elemanı.
+            //3. Parametre: Her işlemde elde edilen dizi elemanının indis / index değeri.
+            //4. Parametre: Her tekrar işleminde diziyi tutan değişkenin referansı.
+
+
+            var sayi = [100,200,300,400,500];
+            document.write(sayi + "<br>");
+            document.write("-----<br>");
+
+            function deneme(deger, eleman, sira, degisken){
+                return deger + eleman;
+            }
+
+            var islem = sayi.reduce(deneme);
+            document.write(islem + "<br>");
+            document.write("-----<br>");
+
+
+            var esya = ["Masa", "Sandalye", "Dolap"];
+            document.write(esya + "<br>");
+            document.write("-----<br>");
+
+            function deneme2(deger, eleman, sira, degisken){
+                return deger + eleman;
+            }
+
+            var islem2 = esya.reduce(deneme2);
+            document.write(islem2 + "<br>");
+            document.write("-----<br>");
+
+
+        </script>
+    </body>
+</html>
