@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //valueOf(): Üzerinde çalışılan dizi değerinin tam anlamıyla aktarımını sağlayarak yeni bir dizi oluşturur ve oluşturduğu dizi değerini geriye döndürür.
+
+            var renk = ["Siyah", "Mavi", ["Kırmızı","Turuncu"]];
+            document.write(renk + "<br>");
+            document.write("-----<br>");
+
+
+            var yenirenk = renk.valueOf();
+            document.write(yenirenk + "<br>");
+            document.write("-----<br>");
+
+
+            renk.fill("JS");
+            document.write(renk + "<br>");
+            document.write(yenirenk + "<br>");
+            document.write("-----<br>");
+
+        </script>
+    </body>
+</html>
