@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //average(): Number veri türü içerikli dizinin her elemanı üzerinde tek tek olmak üzere çalışır ve tüm elemanların ortalamasını bularak, bulduğu değeri geriye döndürür.
+            
+            var sayi = [100,200,300,400,500,600,700,800,900];
+            document.write(sayi + "<br>");
+            document.write("-----<br>");
+
+            Array.prototype.average = function(){
+                var islem = 0;
+                for(var start = 0; start < this.length; start++){
+                    islem += this[start];
+                }
+                var sonuc = islem / this.length;
+                return sonuc;
+            }
+
+            var ort = sayi.average();
+            document.write(ort + "<br>");
+            document.write("-----<br>");
+
+
+        </script>
+    </body>
+</html>
