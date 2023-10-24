@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //concat(): Üzerinde çalışılan diziye pararmetrik olarak verilen eleman veya elemanları ya da dizi veya dizileri dahil ederek yeni bir dizi oluşturur ve oluşturmuş olduğu dizi değerini geriye döndürür.
+            //1. Parametre: Değer
+            //2. Parametre: Başlangıç indisi / indexi 
+            //3. Parametre: Bitiş indisi / indexi 
+
+            var renk = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            document.write(renk + "<br>");
+            document.write("-----<br>");
+
+
+            var esya = ["Masa", "Sandalye", ["Dolap","Baza"],"Vitrin"];
+            document.write(esya + "<br>");
+            document.write("-----<br>");
+
+
+            var isim = ["Yusuf", "Yaşar", "JS"];
+            document.write(isim + "<br>");
+            document.write("-----<br>");
+
+
+            var islem1 = renk.concat(esya);
+            document.write(islem1 + "<br>");
+            document.write("-----<br>");
+
+
+            var islem2 = renk.concat(esya,isim);
+            document.write(islem2 + "<br>");
+            document.write("-----<br>");
+
+
+            var islem2 = renk.concat(esya[1],isim[2]);
+            document.write(islem2 + "<br>");
+            document.write("-----<br>");
+
+
+            
+
+        </script>
+    </body>
+</html>
