@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //slice(): Kendisine verilecek olan parametreler ile tanımlanmış dizi aralığında bulunan değerleri kopyalayarak yeni bir dizi oluşturur ve oluşturduğu dizinin değerini geri döndürür.
+
+            var esya = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya + "<br>");
+
+            var yeniesya1 = esya.slice(1);
+            document.write(yeniesya1 + "<br>");
+
+            var yeniesya2 = esya.slice(1,3);
+            document.write(yeniesya2 + "<br>");
+
+            var yeniesya3 = esya.slice(1,-1);
+            document.write(yeniesya3 + "<br>");
+
+            var yeniesya4 = esya.slice(-4,-2);
+            document.write(yeniesya4 + "<br>");
+
+            var yeniesya5 = esya.slice(-3);
+            document.write(yeniesya5 + "<br>");
+
+        </script>
+    </body>
+</html>
