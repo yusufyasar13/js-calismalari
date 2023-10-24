@@ -8,7 +8,7 @@
     <body>
         <script type="text/javascript" language="javascript">
 
-            //map(): Kendisine parametre olarak belirtilen fonksiyonu dizideki her eleman üzerinde çalıştırır. Fonksiyonun her eleman için geriye true değeri döndüren tüm elemanlarını kopyalayarak yeni bir dizi oluşturur. oluşturduğu dizinin değerini geriye döndürür.
+            //map(): Kendisine parametre olarak belirtilen fonksiyonu dizideki her eleman üzerinde çalıştırır. Fonksiyonun her eleman için geriye döndürdüğü değerlerden yeni bir dizi oluşur ve yeni dizi değerini geriye döndürür. 
             //1. Parametre: Her işlemde elde edilen dizi elemanı.
             //2. Parametre: Her işlemde elde edilen dizi elemanının indis / index değeri.
             //3. Parametre: Her tekrar işleminde diziyi tutan değişkenin referansı.
@@ -17,11 +17,12 @@
             document.write(sayi + "<br>");
             document.write("-----<br>");
 
-            function islem(eleman, sira, degisken){
-                return eleman % 12 === 0;
+            function deneme(eleman, sira, degisken){
+                var islem = eleman * 10;
+                return islem;
             }
 
-            var sonuc = sayi.filter(islem);
+            var sonuc = sayi.map(deneme);
             document.write(sonuc + "<br>");
             document.write("-----<br>");
 
@@ -30,11 +31,12 @@
             document.write(esya + "<br>");
             document.write("-----<br>");
 
-            function islem2(eleman, sira, degisken){
-                return eleman.length <= 5;
+            function deneme2(eleman, sira, degisken){
+                var islem2 = "JS " + eleman;
+                return islem2;
             }
 
-            var sonuc2 = esya.filter(islem2);
+            var sonuc2 = esya.map(deneme2);
             document.write(sonuc2 + "<br>");
             document.write("-----<br>");
 
