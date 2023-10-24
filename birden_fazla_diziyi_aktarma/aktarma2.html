@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var isimler = ["Yusuf", "Yaşar", "JS"];
+            document.write(isimler + "<br>");
+
+            var meyve = ["Elma", "Armut", "Kayısı"];
+            document.write(meyve + "<br>");
+            
+            var sonuc = [isimler, meyve];
+            document.write(sonuc + "<br>");
+            document.write(sonuc[0] + "<br>");
+            document.write(sonuc[0][2] + "<br>");
+            document.write(sonuc[1] + "<br>");
+            document.write(sonuc[1][2] + "<br><br>");
+
+
+            var isimler = new Array("Yusuf", "Yaşar", "JS");
+            document.write(isimler + "<br>");
+
+            var meyve = new Array("Elma", "Armut", "Kayısı");
+            document.write(meyve + "<br>");
+            
+            var sonuc = new Array(isimler, meyve);
+            document.write(sonuc + "<br>");
+            document.write(sonuc[0] + "<br>");
+            document.write(sonuc[0][2] + "<br>");
+            document.write(sonuc[1] + "<br>");
+            document.write(sonuc[1][2] + "<br><br>");
+        
+        </script>
+    </body>
+</html>
