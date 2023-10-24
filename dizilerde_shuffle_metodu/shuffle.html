@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //shuffle(): Dizinin her elemanı üzerinde tek tek çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturarak oluşturduğu değeri geriye döndürür.
+            //1. Parametre: Her işlemde elde edilen dizi elemanı. Oluşturduğu dizinin değerini geriye döndürür.
+            //2. Parametre: Her işlemde elde edilen dizi elemanının indis / index değeri.
+            //3. Parametre: Her tekrar işleminde diziyi tutan değişkenin referansı.
+
+
+            var renk = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil",];
+            document.write(renk + "<br>");
+            document.write("-----<br>");
+
+            Array.prototype.shuffle = function(){
+                var sayi = this.length;
+                while(--sayi > 0){
+                    var rast = Math.floor(Math.random() * (sayi + 1));
+                    var gecici = this[rast];
+                    this[rast] = this[sayi];
+                    this[sayi] = gecici;
+                    return this;
+                }
+            }
+
+            var karıstır = renk.shuffle();
+            document.write(karıstır + "<br>");
+            document.write("-----<br>");
+
+        </script>
+    </body>
+</html>
