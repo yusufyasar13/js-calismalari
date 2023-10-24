@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //fill(): Kendisine verilecek olan parametreler ile tanımlanmış dizi aralığında bulunan değeri, parameter ile belirlenmiş olan değer doğrultusunda dizinin elemanlarını değiştirir ve dizinin değerini geriye döndürür.
+            //1. Parametre: Değer
+            //2. Parametre: Başlangıç indisi / indexi 
+            //3. Parametre: Bitiş indisi / indexi 
+
+            var renk = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            document.write(renk + "<br>");
+            document.write("-----<br>");
+
+
+            var renk1 = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            renk1.fill("Sarı",4,6);
+            document.write(renk1 + "<br>");
+            document.write("-----<br>");
+
+
+            var renk2 = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            renk2.fill("Sarı");
+            document.write(renk2 + "<br>");
+            document.write("-----<br>");
+
+
+            var renk3 = ["Siyah", "Mavi", "Kırmızı","Turuncu","Beyaz","Mor","Pembe","Yeşil","Kırmızı"];
+            renk3.fill("Sarı", 3);
+            document.write(renk3 + "<br>");
+            document.write("-----<br>");
+
+        </script>
+    </body>
+</html>
