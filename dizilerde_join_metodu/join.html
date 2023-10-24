@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //join(): Dizilerdeki elemanların arasına kendisine paraemtre olarak verilen değeri ayraç olarak kullanarak string veri türündedüz bir metin oluşturur ve bu oluşturduğu değeri geriye döndürür.
+
+            var renk = ["Siyah", "Mavi", ["Kırmızı","Turuncu"]];
+            document.write(renk + "<br>");
+            document.write(Array.isArray(renk) + "<br>");
+            document.write("-----<br>");
+
+            var islem1 = renk.join();
+            document.write(islem1 + "<br>");
+            document.write(Array.isArray(islem1) + "<br>");
+            document.write("-----<br>");
+
+            var islem2 = renk.join(" & ");
+            document.write(islem2 + "<br>");
+            document.write(Array.isArray(islem2) + "<br>");
+            document.write("-----<br>");
+
+        </script>
+    </body>
+</html>
