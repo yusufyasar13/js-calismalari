@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //some(): Kendisine parametre olarak belirtilen fonksiyon true değeri döndürene kadardizi elemanları üzerinde sıra ile gezinilmesini sağlar.
+            //1. Parametre: Her işlemde elde edilen dizi elemanı.
+            //2. Parametre: Her işlemde elde edilen dizi elemanının indis / index değeri.
+            //3. Parametre: Her tekrar işleminde diziyi tutan değişkenin referansı.
+
+            var sayi = [100,200,300,400,500,600,700,800,900];
+            document.write(sayi + "<br>");
+            document.write("-----<br>");
+
+            function islem(eleman, sira, degisken){
+                sonuc = eleman;
+                return eleman % 12 === 0;
+            }
+
+            var sonuc = 0;
+            sayi.some(islem);
+            document.write(sonuc + "<br>");
+            document.write("-----<br>");
+
+
+            var esya = ["Masa", "Sandalye", "Dolap","Baza","Vitrin"];
+            document.write(esya + "<br>");
+            document.write("-----<br>");
+
+            function islem2(eleman, sira, degisken){
+                sonuc2 = eleman;
+                return eleman == "Masa";
+            }
+
+            var sonuc2 = 0;
+            esya.some(islem2);
+            document.write(sonuc2 + "<br>");
+            document.write("-----<br>");
+
+        </script>
+    </body>
+</html>
