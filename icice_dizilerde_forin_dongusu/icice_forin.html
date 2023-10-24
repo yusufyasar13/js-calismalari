@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var isimler1 = ["Yusuf", "Yaşar", "JS", ["CSS","HTML",["Java","C","Python"]]];
+            document.write(isimler1 + "<br>");
+            document.write("--------<br>");
+            
+
+            var sonuc;
+            for(sonuc in isimler1){
+                document.write(isimler1[sonuc] + "<br>");
+            }
+            document.write("--------<br>");
+
+
+            var sonuc;
+            for(sonuc in isimler1){
+                if(Array.isArray(isimler1[sonuc])){
+                    var ilk;
+                    for(ilk in isimler1[sonuc]){
+                        if(Array.isArray(isimler1[sonuc][ilk])){
+                            var iki;
+                            for(iki in isimler1[sonuc][ilk]){
+                                document.write(isimler1[sonuc][ilk][iki] + "<br>");
+                            }
+                        }else{
+                            document.write(isimler1[sonuc][ilk] + "<br>");
+                        }
+                    }
+                }else{
+                    document.write(isimler1[sonuc] + "<br>");
+                }
+            }
+            document.write("--------<br>");
+
+            
+        </script>
+    </body>
+</html>
