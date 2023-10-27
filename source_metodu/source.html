@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //source: Düzenli ifade içerisinde kullanılan desen değerlerini geriye döndürür.
+
+            var metin = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade = new RegExp("JS");
+            var sonuc = metin.match(ifade);
+            var kontrol = ifade.source;
+            document.write(kontrol + "<br>");
+
+            var metin2 = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade2 = /JS/;
+            var sonuc2 = metin2.match(ifade2);
+            var kontrol2 = ifade.source;
+            document.write(kontrol2 + "<br>");
+
+            var metin3 = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade3 = new RegExp("JS");
+            var sonuc3 = metin.match(ifade3);
+            var kontrol3 = ifade3.source;
+            document.write(kontrol3 + "<br>");
+
+            var metin4 = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade4 = /JS/;
+            var sonuc4 = metin4.match(ifade4);
+            var kontrol4 = ifade4.source;
+            document.write(kontrol4 + "<br>");
+
+
+        </script>
+    </body>
+</html>
