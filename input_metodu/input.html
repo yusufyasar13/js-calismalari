@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //input: Değişken içeriğinde düzenli ifade ile aranan değerin işleşmesi durumunda eşleşmeyi sağlayan değişken içeriğinin tüm değeri geriye döndürür.
+
+            var metin = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade = new RegExp("JS");
+            ifade.test(metin);
+            var sonuc = RegExp.input;
+            document.write(sonuc + "<br>");
+
+            var metin2 = "Yusuf Yaşar JS HTML CSS JS";
+            var ifade2 = new RegExp("JS");
+            ifade2.test(metin2);
+            var sonuc2 = RegExp.input;
+            document.write(sonuc2 + "<br>");
+
+
+        </script>
+    </body>
+</html>
