@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            
+            //exec(): Kendisine parametre olarak verilen değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerlerinden yeni bir dizi  oluşturur ve oluşturduğu değeri geriye döndürür.
+            //g ayarı kullanılacak olur ise exec metodu her çağırıldığında lastIndex değeri otomatik olarak eşleşen değerden bir sonraki değeri alacaktır.
+
+            var metin = "Yusuf Yaşar JS HTML CSS js";
+            var ifade = new RegExp("JS","gi");
+            var sonuc = ifade.exec(metin);
+            var sonuciki = ifade.exec(metin);
+            var sonucuc = ifade.exec(metin);
+            document.write(sonuc + "<br>");
+            document.write(sonuciki + "<br>");
+            document.write(sonucuc + "<br>");
+
+            var metin2 = "Yusuf Yaşar JS HTML CSS js";
+            var ifade2 = /JS/gi;
+            var sonuc2 = ifade2.exec(metin2);
+            var sonuc2iki = ifade2.exec(metin2);
+            var sonuc2uc = ifade2.exec(metin2);
+            document.write(sonuc2 + "<br>");
+            document.write(sonuc2iki + "<br>");
+            document.write(sonuc2uc + "<br>");
+
+            
+        </script>
+    </body>
+</html>
