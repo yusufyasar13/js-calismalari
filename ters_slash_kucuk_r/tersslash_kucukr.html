@@ -8,16 +8,16 @@
     <body>
         <script type="text/javascript" language="javascript">
 
-            //\r: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece parağraf sonu karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
-            //\u000D: 16 Bit yazım şekli
+            //\t: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece yatay sekme karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //\u0009: 16 Bit yazım şekli
 
-            var metin = "Yusuf! Yaşar% Javascript? \r[HTML] (CSS) 13_ \u000D";
-            var ifade = new RegExp("\\r","g");
+            var metin = "Yusuf! Yaşar% Javascript?  [HTML] (CSS) 13_ \u0009";
+            var ifade = new RegExp("\\t","g");
             var sonuc = ifade.test(metin);
             document.write(sonuc + "<br>");
             
-            var metin = "Yusuf! Yaşar% Javascript? \r[HTML] (CSS) 13_ \u000D";
-            var ifade = /\r/g;
+            var metin = "Yusuf! Yaşar% Javascript?  [HTML] (CSS) 13_ \u0009";
+            var ifade = /\t/g;
             var sonuc = ifade.test(metin);
             document.write(sonuc + "<br>");
 
