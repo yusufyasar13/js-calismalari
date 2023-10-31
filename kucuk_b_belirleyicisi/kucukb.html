@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\b: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğin düzenli ifadeye uygun olabilecek metin parçalarını, karakter dizilimi içerisindeki kelimelerin başında ya da sonunda aranak için kullanılır.
+
+            var metin = "Yusuf Yaşar JS"
+            var ifade = new RegExp("\\bJS");
+            var sonuc = metin.search(ifade);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar JS"
+            var ifade = /\bJS/;
+            var sonuc = metin.search(ifade);
+            document.write(sonuc + "<br>");
+
+            var metin = "Yusuf Yaşar JS"
+            var ifade = new RegExp("JS\\b");
+            var sonuc = metin.search(ifade);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar JS"
+            var ifade = /JS\b/;
+            var sonuc = metin.search(ifade);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
