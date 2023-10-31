@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\uXXXX: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin 16 Bit'lik Unicode formatındaki karşılığı olan karakterleri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //Değer aralığı: \u0000 - \uFFFF
+            //hexadecimal numeral system: onaltılık sayı sistemi
+            //ASCII (American Standart Code for Information Interchange): Bilgi değişimi için Amerikan standart kodlama sistemi
+            // \u0059 \u0075 \u0073 \u0075 \u0066
+
+            var metin = "Yusuf";
+            var ifade = new RegExp("\\u0073","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf";
+            var ifade = /\u0073/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
