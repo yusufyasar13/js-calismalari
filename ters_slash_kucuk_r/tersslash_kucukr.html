@@ -12,7 +12,7 @@
             //\u000D: 16 Bit yazım şekli
 
             var metin = "Yusuf! Yaşar% Javascript? \r[HTML] (CSS) 13_ \u000D";
-            var ifade = new RegExp("\\","g");
+            var ifade = new RegExp("\\r","g");
             var sonuc = ifade.test(metin);
             document.write(sonuc + "<br>");
             
