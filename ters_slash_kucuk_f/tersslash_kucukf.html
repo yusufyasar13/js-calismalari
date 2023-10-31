@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\f: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece form besleme karakterleri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //\u00c: 16 Bit yazım şekli
+
+            var metin = "Yusuf! Yaşar% Javascript? [HTML] (CSS) 13_ \u000C";
+            var ifade = new RegExp("\\f","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf! Yaşar% Javascript? [HTML] (CSS) 13_ \u000C";
+            var ifade = /\f/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+
+        </script>
+    </body>
+</html>
