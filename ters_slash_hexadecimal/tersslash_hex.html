@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\xXX: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin hexadecimal numeral system tabanında ASCII karşılığı olan karakterleri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //Değer aralığı: \x00 - \xFF
+            //hexadecimal numeral system: onaltılık sayı sistemi
+            //ASCII (American Standart Code for Information Interchange): Bilgi değişimi için Amerikan standart kodlama sistemi
+            // \x59 \x75 \x73 \x75 \x66
+
+            var metin = "Yusuf";
+            var ifade = new RegExp("\\x73","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf";
+            var ifade = /\x73/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
