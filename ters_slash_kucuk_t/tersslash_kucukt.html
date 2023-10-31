@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\t: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece yatay sekme karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //\u0009: 16 Bit yazım şekli
+
+            var metin = "Yusuf! Yaşar% Javascript?  [HTML] (CSS) 13_ \u0009";
+            var ifade = new RegExp("\\t","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf! Yaşar% Javascript?  [HTML] (CSS) 13_ \u0009";
+            var ifade = /\t/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+
+        </script>
+    </body>
+</html>
