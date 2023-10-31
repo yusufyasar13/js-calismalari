@@ -10,12 +10,12 @@
 
             //{x}: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin x defa tekrarlanmışolması gerektiğini belirtmek için kullanılır.
 
-            var metin = "Yusuf Yaşar JJJ"
+            var metin = "Yusuf Yaşar JJJ";
             var ifade = new RegExp("J{3}","i");
             var sonuc = ifade.test(metin);
             document.write(sonuc + "<br>");
             
-            var metin = "Yusuf Yaşar JJJ"
+            var metin = "Yusuf Yaşar JJJ";
             var ifade = /J{3}/i;
             var sonuc = ifade.test(metin);
             document.write(sonuc + "<br>");
