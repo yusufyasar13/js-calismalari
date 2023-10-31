@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //.: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin yeni satır karakteri hariç herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullanılır.
+
+            var metin = "Yusuf Yaşar Javascript rapor";
+            var ifade = new RegExp("r.p","g");
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar Javascript rapor"
+            var ifade = /r.p/g;
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+
+            var metin = "Yusuf Yaşar Javascript rapor";
+            var ifade = new RegExp("J.+t","g");
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+
+            var metin = "Yusuf Yaşar Javascript rapor"
+            var ifade = /J.+t/g;
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
