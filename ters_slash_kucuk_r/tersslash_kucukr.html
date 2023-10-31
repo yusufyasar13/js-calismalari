@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\r: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece parağraf sonu karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //\u000D: 16 Bit yazım şekli
+
+            var metin = "Yusuf! Yaşar% Javascript? \r[HTML] (CSS) 13_ \u000D";
+            var ifade = new RegExp("\\r","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf! Yaşar% Javascript? \r[HTML] (CSS) 13_ \u000D";
+            var ifade = /\r/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+
+        </script>
+    </body>
+</html>
