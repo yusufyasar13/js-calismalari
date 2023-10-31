@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\0: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin sadece Null karakterleri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //16 bit Null değeri: \u0000
+
+            var metin = "Yusuf! Yaşar% Javascript? [HTML] (CSS) 13_ \u0000";
+            var ifade = new RegExp("\\0","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf! Yaşar% Javascript? [HTML] (CSS) 13_ \u0000";
+            var ifade = /\0/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+
+        </script>
+    </body>
+</html>
