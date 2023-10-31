@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //^: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminin başlangıcı ile düzenli ifade arasında eşleşme aranak için kullanılır.
+
+            var metin = "Yusuf Yaşar JS"
+            var ifade = new RegExp("^Yusuf");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar JS"
+            var ifade = /^Yusuf/;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+
+
+        </script>
+    </body>
+</html>
