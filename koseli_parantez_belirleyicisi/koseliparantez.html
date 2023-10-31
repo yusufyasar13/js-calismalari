@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //[abc]: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin belirtilen karakterlerden herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullanılır.
+
+            var metin = "Yusuf Yaşar Javascript";
+            var ifade = new RegExp("[Javascript]","g");
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar Javascript"
+            var ifade = /[Javascript]/g;
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
