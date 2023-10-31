@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\XXX: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan  değerin octal numeral system tabanında ASCII karşılığı olan karakterleri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+            //Değer aralığı: \000 - \377
+            //octal numeral system: sekizlik sayı sistemi
+            //ASCII (American Standart Code for Information Interchange): Bilgi değişimi için Amerikan standart kodlama sistemi
+            // 131 165 163 165 146
+
+            var metin = "Yusuf";
+            var ifade = new RegExp("\\163","g");
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf";
+            var ifade = /\163/g;
+            var sonuc = ifade.test(metin);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
