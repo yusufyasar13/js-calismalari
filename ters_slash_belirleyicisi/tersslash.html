@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //\: Düzenli ifadelerde ardından gelecek olan karakterin özel bir karakter olup olmadığını belirtmek için kullanılır. 
+
+            var metin = "Yusuf Yaşar Javascript"
+            var ifade = new RegExp("\\S","g");
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+            
+            var metin = "Yusuf Yaşar Javascript"
+            var ifade = /\S/g;
+            var sonuc = metin.match(ifade);
+            document.write(sonuc + "<br>");
+
+        </script>
+    </body>
+</html>
