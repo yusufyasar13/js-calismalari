@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //now(): Kullanıldığı değişken içeriğine evrensel zaman dilimine ait tarihin zaman damgası bilgisini depolayarak, depoladığı değeri geriye döndürür. Zaman damgasi başlangıç tarihi: 1 Ocak 1970
+            //UTC (Coordinated Universal Time): Eş güdümlü evrensel zaman
+
+
+            var zaman = Date.now();
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date();
+            var damga = zaman.getTime();
+            document.write(damga + "<br>")
+            document.write("--------<br>")
+            
+    
+        </script>
+    </body>
+</html>
