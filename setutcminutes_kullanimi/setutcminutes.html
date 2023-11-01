@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //setUTCMinutes(): Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait saatin dakika bilgisini 0 ile 23 arasında olmak üzere rakamsal olarak depolayarak, depoladığı değeri geriye döndürür. Çoklu ayarlama işlemi yapılabilir. (Sıralama: Dakika, Saniye, Milisaniye)
+            //UTC (Coordinated Universal Time): Eş güdümlü evrensel zaman
+
+
+            var zaman = new Date();
+            zaman.setUTCMinutes(21);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+            
+            var zaman = new Date();
+            zaman.setUTCMinutes(21,44,567);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+        </script>
+    </body>
+</html>
