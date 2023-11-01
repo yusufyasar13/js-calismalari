@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //Date(): Kullanıldığı değişken içerisinde tarih ve saat bilgilerini depolayarak, depoladığı değeri geriye döndürür. (Tarihe etki edilebilir.)
+
+            var zaman = new Date();
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+            
+            var zaman = new Date(15,8,14);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date(2021,5,22);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date(2015,4,14,20,15,44);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date(2015,4,14,20,15,44);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date("October 11, 2005");
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date("October 11, 2005 13:30:20");
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+            var zaman = new Date();
+            var donustur = String(zaman);
+            var parcala = donustur.split(" ");
+            var gun = parcala[0];
+            document.write(gun + "<br>")
+            var ay = parcala[1];
+            document.write(ay + "<br>")
+            var gun2 = parcala[2];
+            document.write(gun2 + "<br>")
+            var yil = parcala[3];
+            document.write(yil + "<br>")
+            var tamsaat = parcala[4];
+            var parcasaat = tamsaat.split(":");
+            var saat = parcasaat[0];
+            document.write(saat + "<br>")
+            var dakika = parcasaat[1];
+            document.write(dakika + "<br>")
+            var saniye = parcasaat[2];
+            document.write(saniye + "<br>")
+            var dilim = parcala[5];
+            document.write(dilim + "<br>")
+            document.write("--------<br>")
+
+        </script>
+    </body>
+</html>
