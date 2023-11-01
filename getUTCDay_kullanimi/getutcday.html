@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //getUTCDay(): Kullanıldığı değişken içeriğine evrensel zaman dilimine ait haftanın gün bilgisini 0 ile 6 arasında olmak üzere rakamsal olarak depolayarak, depoladığı değeri geriye döndürür. (İlk gün pazar günüdür ve değeri 0'dır.)
+            //UTC (Coordinated Universal Time): Eş güdümlü evrensel zaman
+
+            var zaman = new Date();
+            var utcgun = zaman.getUTCDay();
+            document.write(utcgun + "<br>")
+            document.write("--------<br>")
+            
+        </script>
+    </body>
+</html>
