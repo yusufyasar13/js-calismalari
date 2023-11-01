@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //setUTCMonth(): Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait yılın ay bilgisini 0 ile 31 arasında olmak üzere rakamsal olarak depolayarak, depoladığı değeri geriye döndürür. Çoklu ayarlama işlemi yapılabilir. (Sıralama: Ay, Gün) (İlk ayın değeri 0'dır.)
+            //UTC (Coordinated Universal Time): Eş güdümlü evrensel zaman
+
+
+            var zaman = new Date();
+            zaman.setUTCMonth(5);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+            
+            var zaman = new Date();
+            zaman.setUTCMonth(5,8);
+            document.write(zaman + "<br>")
+            document.write("--------<br>")
+
+        </script>
+    </body>
+</html>
