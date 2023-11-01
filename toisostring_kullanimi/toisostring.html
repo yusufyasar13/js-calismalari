@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //toISOString(): Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini ISO standartını kullanarak string veri türünde düz bir metne dönüştürerek, dönüştürdüğü değeri geriye döndürür.
+            //ISO (International Standarts Organization): Uluslararası standartlar organizasyonu
+
+            var zaman = new Date();
+            document.write(zaman + "<br>")
+            document.write(typeof zaman + "<br>")
+            document.write("--------<br>")
+
+            var donus = zaman.toISOString();
+            document.write(donus + "<br>")
+            document.write(typeof donus + "<br>")
+            document.write("--------<br>")
+            
+        </script>
+    </body>
+</html>
