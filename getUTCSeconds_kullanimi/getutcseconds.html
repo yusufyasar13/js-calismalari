@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            //getUTCSeconds(): Kullanıldığı değişken içeriğine evrensel zaman dilimine ait dakikanın saniye bilgisini 0 ile 59 arasında olmak üzere rakamsal olarak depolayarak, depoladığı değeri geriye döndürür.
+            //UTC (Coordinated Universal Time): Eş güdümlü evrensel zaman
+
+            var zaman = new Date();
+            var utcsaniye = zaman.getUTCSeconds();
+            document.write(utcsaniye + "<br>")
+            document.write("--------<br>")
+            
+        </script>
+    </body>
+</html>
