@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //toLocaleString(): Nesnenin tarayıcı lokasyonuna / diline göre karakter dizesi olarak temsil edilen halinin değerini geriye döndürür. Nesne nesne değeri üzerinden tarayıcı lokasyonuna / diline göre işlemler yapabilir.
+            
+            var  bilgiler1 = {
+                isim:"Yusuf",
+                
+            }
+            var sonuc1 = bilgiler1.toLocaleString();
+            document.write(sonuc1 + "<br>");
+
+            
+            var deger = 1500;
+            var sonuc2 = deger.toLocaleString();
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1500;
+            var sonuc2 = deger.toLocaleString("tr-TR");
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1500;
+            var sonuc2 = deger.toLocaleString("en-US");
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1500;
+            var sonuc2 = deger.toLocaleString("tr-TR", {style:"currency", currency:"TRY"});
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1500;
+            var sonuc2 = deger.toLocaleString("en-US", {style:"currency", currency:"USD"});
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1550;
+            var sonuc2 = deger.toLocaleString("tr-TR", {style:"currency", currency:"TRY", maximumSignificantDigits:2});
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1520;
+            var sonuc2 = deger.toLocaleString("tr-TR", {style:"currency", currency:"TRY", maximumSignificantDigits:2});
+            document.write(sonuc2 + "<br>");
+
+
+            var deger = 1550;
+            var sonuc2 = deger.toLocaleString("tr-TR", {style:"currency", currency:"TRY", minimumSignificantDigits:8});
+            document.write(sonuc2 + "<br>");
+
+            
+            var deger = 1520;
+            var sonuc2 = deger.toLocaleString("tr-TR", {style:"currency", currency:"TRY", minimumSignificantDigits:8});
+            document.write(sonuc2 + "<br>");
+
+
+        </script>
+    </body>
+</html>
