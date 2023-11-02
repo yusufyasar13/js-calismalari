@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //constructor: Nesnenin constructor'ını (yapıcı metodunu) elde etmek için kullanılır ve constructor'ın değerini geriye döndürür. Ayrıca aynı zamanda kontrol işlemleri içinde kullanılır.
+
+            function bilgiler() {
+                isim = "Yusuf";
+
+            }
+
+            var sonuc = new bilgiler();
+            var islem = sonuc.constructor;
+            var kontrol = sonuc.constructor == bilgiler;
+            document.write(islem + "<br>");
+            document.write(kontrol + "<br>");
+
+        </script>
+    </body>
+</html>
