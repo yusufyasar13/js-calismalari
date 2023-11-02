@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var ornek = function(ad="Elma", soyad="Armut"){
+                this.isim = ad;
+                this.soyisim = soyad;
+            }
+
+            var sonuc = new ornek();
+            var sonuc2 = new ornek("YUSUF");
+
+            var a = sonuc.isim;
+            var b = sonuc.soyisim;
+            document.write(a + b + "<br>");
+            
+            var c = sonuc2.isim;
+            var d = sonuc2.soyisim;
+            document.write(c + d + "<br>");
+
+
+        </script>
+    </body>
+</html>
