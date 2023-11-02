@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var bilgiler = {
+               
+                deger:function(isim, soyisim, dil, yil){                
+                    var ad = isim;
+                    var soyad = soyisim;
+                    var yazılım = dil;
+                    var sene = yil;
+                    var metin = ad + soyad + yazılım + sene;
+                    return metin;
+    
+                }
+            };
+            var sonuc = bilgiler.deger("Yusuf","Yaşar", "JS", "2023");
+            document.write(sonuc + "<br>");
+
+            var sonuc = bilgiler.deger("Elma","Armut", "PHP", "2002");
+            document.write(sonuc + "<br>");
+            
+        </script>
+    </body>
+</html>
