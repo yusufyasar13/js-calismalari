@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //unwatch(): Nesnenin belirtilen bir özelliği değiştiğinde, eklenmiş olan bir işlevi kaldırmak için kullanılır.
+            //1. Parametre: Özelliğin adı
+            //2. Parametre: Özelliğin eski değeri
+            //3. Parametre: Özelliğin yeni değeri
+
+            var  bilgiler = {
+                isim:"Yusuf",
+                
+            }
+
+            bilgiler.watch("isim",function(ozellikadi, eskideger, yenideger){
+                var ad = ozellikadi;
+                var eski = eskideger;
+                var yeni = yenideger;
+                var metin = ozellikadi + "\n" + eskideger + "\n"  + ozellikadi;
+                alert(metin);
+            });
+            
+            bilgiler.isim = "Elma";
+            
+            bilgiler.unwatch("isim");
+
+            bilgiler.isim = "Armut";
+
+
+
+            
+        </script>
+    </body>
+</html>
