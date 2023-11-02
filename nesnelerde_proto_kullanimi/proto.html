@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //__proto__: Bir nesnenin prototype nesnesini elde etmek için kullanılır ve prototype nesnesi içerisindeki özelliklere ulaşarak değeri geriye döndürür.
+
+            function bilgiler(ad,soyad,yazilim) {
+                this.isim = ad;
+                this.soyisim = soyad; 
+                this.dil = yazilim;
+                
+            }
+
+            bilgiler.prototype.islem = function(){
+                this.ifade  = "Merhaba";
+            }
+
+            var sonuc = new bilgiler("Yusuf","Yaşar","JS");
+
+            sonuc.__proto__.islem();
+
+            var a = sonuc.isim;
+            var b = sonuc.soyisim;
+            var c = sonuc.dil;
+            var d = sonuc.__proto__.ifade;
+
+            document.write(a + "<br>");
+            document.write(b + "<br>");
+            document.write(c + "<br>");
+            document.write(d + "<br>");
+            
+            
+        </script>
+    </body>
+</html>
