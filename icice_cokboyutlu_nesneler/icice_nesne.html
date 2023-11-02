@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var bilgiler = {
+                isim:"Yusuf", 
+                soyisim:"Yaşar", 
+                yazilim:"JS",
+                detay:{
+                    yil:2023,
+                    diller:{
+                        bir:"İng",
+                        iki:"Alm",
+                        uc:"Spa"
+                    }
+                }
+            };
+            
+            var ad = bilgiler.isim;
+            var soyad = bilgiler.soyisim;
+            var kod = bilgiler.yazilim;
+            var sene = bilgiler.detay.yil;
+            var ing = bilgiler.detay.diller.bir;
+            var alm = bilgiler.detay.diller.iki;
+            var isp = bilgiler.detay.diller.uc;
+
+            document.write(ad + "<br>");
+            document.write(soyad + "<br>");
+            document.write(kod + "<br>");
+            document.write(sene + "<br>");
+            document.write(ing + "<br>");
+            document.write(alm + "<br>");
+            document.write(isp + "<br>");
+
+        </script>
+    </body>
+</html>
