@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //toString(): Nesnenin karakter dizesi olarak temsil edilen halinin değerini geriye döndürür. Nesne prototype özelliği kullanılarak değer ataması yapılabilir.
+            //1. Parametre: Özelliğin adı
+            //2. Parametre: Özelliğin eski değeri
+            //3. Parametre: Özelliğin yeni değeri
+
+            var  bilgiler1 = {
+                isim:"Yusuf",
+                
+            }
+            var sonuc1 = bilgiler1.toString();
+            document.write(sonuc1 + "<br>");
+
+            
+            function bilgiler2(){
+
+            }
+            var islem2 = new bilgiler2();
+            var sonuc2 = islem2.toString();
+            document.write(sonuc2 + "<br>");
+
+
+            function bilgiler3(){
+                document.write("Yusuf");
+            }
+            var islem3 = new bilgiler3();
+            var sonuc3 = islem3.toString();
+            document.write(sonuc3 + "<br>");
+
+
+            function bilgiler4(){
+                this.metin = "Yusuf Yaşar";
+            }
+            bilgiler4.prototype.toString = function(){
+                document.write(this.metin + "<br>");
+            }
+            var islem4 = new bilgiler4();
+            var sonuc4 = islem4.toString();
+
+
+        </script>
+    </body>
+</html>
