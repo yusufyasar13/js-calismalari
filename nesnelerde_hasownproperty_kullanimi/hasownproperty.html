@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //hasOwnProperty: Bir nesnenin parametrik olarak girilen özelliğinin kullanılığ kullanılmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür.
+
+            var  bilgiler = {
+                isim:"Yusuf",
+                soyisim:"Yaşar",
+                dil:"JS"
+
+            }
+
+            var kontrol1 = bilgiler.hasOwnProperty("isim");
+            var kontrol2 = bilgiler.hasOwnProperty("soyisim");
+            var kontrol3 = bilgiler.hasOwnProperty("dil");
+            var kontrol4 = bilgiler.hasOwnProperty("yil");
+
+            document.write(kontrol1 + "<br>");
+            document.write(kontrol2 + "<br>");
+            document.write(kontrol3 + "<br>");
+            document.write(kontrol4 + "<br>");
+        
+            
+        </script>
+    </body>
+</html>
