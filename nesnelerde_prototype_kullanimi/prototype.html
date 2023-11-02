@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            function bilgiler(ad,soyad,yazilim) {
+                this.isim = ad;
+                this.soyisim = soyad; 
+                this.dil = yazilim;
+                
+            }
+
+            bilgiler.prototype.islem = function(){
+                return this.isim + " " + this.soyisim + " " + this.dil;
+            }
+
+            var sonuc = new bilgiler("Yusuf","Yaşar","JS");
+            
+            var yaz = sonuc.islem();
+            document.write(yaz + "<br>");
+            
+
+        </script>
+    </body>
+</html>
