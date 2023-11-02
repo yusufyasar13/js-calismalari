@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+
+            var bilgiler1 = {
+                isim:"Yusuf", 
+                soyisim:"Yaşar", 
+                dil:"JS", 
+                sene:2023,
+                detay:function(){
+                    var msj = "Mehaba";
+                    document.write(msj + "<br>")
+                }
+            };
+            
+            var bilgiler2 = {
+                isim:"Yusuf", 
+                soyisim:"Yaşar", 
+                dil:"JS", 
+                sene:2023,
+                detay:function(){
+                    var msj = "Selam";
+                    document.write(msj + "<br>")
+                }
+            };
+           
+            var ad1 = bilgiler1.isim;
+            var soyad1 = bilgiler1.soyisim;
+            var yazilim1 = bilgiler1.dil;
+            var yil1 = bilgiler1.sene;
+
+            document.write(ad1 + soyad1 + yazilim1 +  yil1 + "<br>");
+            bilgiler1.detay();
+
+            var ad2 = bilgiler2.isim;
+            var soyad2 = bilgiler2.soyisim;
+            var yazilim2 = bilgiler2.dil;
+            var yil2 = bilgiler2.sene;
+
+            document.write(ad2 + soyad2 + yazilim2 +  yil2 + "<br>");
+            bilgiler2.detay();
+
+
+            var ad = "YUSUF";
+            var soyad = "YAŞAR";
+            var metin  ="NBR";
+
+            var bilgiler = {
+                isim:ad,
+                soyisim:soyad,
+                detay:function(){
+                    var msj = metin;
+                    document.write(msj + "<br>")
+                }
+            };
+
+            var ad3 = bilgiler.isim;
+            var soyad3 = bilgiler.soyisim;
+
+            document.write(ad3 + soyad3 + "<br>");
+            bilgiler.detay();
+
+
+        </script>
+    </body>
+</html>
