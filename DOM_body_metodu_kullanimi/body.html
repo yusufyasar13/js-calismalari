@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        Yusuf Yaşar JS 
+
+        <button onclick="func()">Çalıştır</button>
+        <button onclick="boya1()">Yeşil</button>
+        <button onclick="boya2()">Mavi</button>
+
+
+        <div id = "sonuc">...</div>
+        <script type="text/javascript" language="javascript">
+            //body: Belge içerisindeki body tag'ının referansını elde etmek için kullanılır.
+
+            function func(){
+                var islem = document.body.innerHTML;
+                document.getElementById("sonuc").innerHTML = islem;
+            }
+
+            function boya1(){
+                document.body.style.backgroundColor = "green";
+            }
+
+            function boya2(){
+                document.body.style.backgroundColor = "blue";
+            }
+
+        </script>
+    </body>
+</html>
