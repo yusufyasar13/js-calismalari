@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            //implementation: Belge ile ilgili DOMimplementation arayüzünden türetilmiş bir DOMimplementation nesnesi referansını boolean veri türünde elde etmek için kullanılır.
+            //implementation: Uygulama
+
+            var islem = document.implementation;
+            document.getElementById("sonuc").innerHTML = islem.hasFeature("HTML","1.0");
+
+        </script>
+    </body>
+</html>
