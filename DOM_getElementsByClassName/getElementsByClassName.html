@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            div{
+                border: 1px solid black;
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="bicim">Yusuf</div>
+        <div class="bicim">Yaşar</div>
+        <div class="bicim2">JS</div>
+        <div class="bicim">HTML</div>
+        <div class="bicim">CSS</div>
+        <div class="bicim2">PYTHON</div>
+        <p id="islemsonucu"></p>
+        
+    
+        <script type="text/javascript" language="javascript">
+            //getElementsByClassName(): Kendisine parametre olarak verilen değer doğrultusunda, belge içerisinde belirtilen class adına sahip tüm elemanların referansını elde etmek için kullanılır. Elemna referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+
+            var sonuc = document.getElementsByClassName("bicim2").length;
+            document.getElementById("islemsonucu").innerHTML = sonuc;
+
+            
+            var sonuc2 = document.getElementsByClassName("bicim2");
+            for(var bas = 0; bas<sonuc2.length;bas++){
+                sonuc2[bas].style.backgroundColor = "yellow";
+            }
+
+        </script>
+    </body>
+</html>
