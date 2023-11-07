@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <button onclick="ornek()">Tıkla</button>
+        <div id="sonuc"></div>
+        <script type="text/javascript" language="javascript">
+            //readyState: Belgenin içeriğinin browser (tarayıcı) tarafından yüklenme durumu değeri referansını elde etmek için kullanılır.
+
+            function ornek(){
+                var sonuc = document.readyState;
+                document.getElementById("sonuc").innerHTML = sonuc;
+
+            }            
+
+        </script>
+    </body>
+</html>
