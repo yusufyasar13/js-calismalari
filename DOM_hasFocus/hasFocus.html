@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            //hasFocus(): Belgenin odağının olup olmadığı referansını boolean veri türünde elde etmek için kullanılır.
+
+            setInterval("ornek()", 1000)
+            function ornek(){
+                var sonuc = document.hasFocus();
+                if(document.hasFocus()){
+                    document.write(sonuc + "<br>");
+                }else{
+                    document.write(sonuc + "<br>");
+                }
+            }
+            
+        </script>
+    </body>
+</html>
