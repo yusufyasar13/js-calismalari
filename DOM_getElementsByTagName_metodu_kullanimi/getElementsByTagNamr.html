@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div>Yusuf Yaşar</div>
+        <p>Diller</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>Python</li>
+        </ul>
+        <br>
+        <div id="isim"></div>
+        <div id="Baslik"></div>
+        <div id="tum"></div>
+        <div id="ilk"></div>
+        <div id="degis"></div>
+        <div id="dongu"></div>
+        <div id="tag"></div>
+
+        
+
+    
+        <script type="text/javascript" language="javascript">
+            //getElementsByTagName(): Kendisine parametre olarak verilen değer doğrultusunda, belge içerisinde belirtilen tag adına sahip tüm elemanların referansını elde etmek için kullanılır. Elemna referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var islem = document.getElementsByTagName("DIV")[0].innerHTML;
+            document.getElementById("isim").innerHTML = islem;
+
+
+            var islem2 = document.getElementsByTagName("P")[0].innerHTML;
+            document.getElementById("Baslik").innerHTML = islem2;
+
+
+            var islem3 = document.getElementsByTagName("UL")[0].innerHTML;
+            document.getElementById("tum").innerHTML = islem3;
+
+
+            var islem4 = document.getElementsByTagName("LI")[0].innerHTML;
+            document.getElementById("ilk").innerHTML = islem4;
+
+
+            var islem4 = document.getElementsByTagName("DIV")[0].innerHTML = "Elma Armut";
+            document.getElementById("degis").innerHTML = islem4;
+
+
+            var deger = document.getElementsByTagName("LI");
+            var say = document.getElementsByTagName("LI").length;
+            for(var bas=0;bas<say;bas++){
+                document.getElementById("dongu").innerHTML += deger[bas].innerHTML + "<br>";
+            }
+
+
+            var tum_tag = document.getElementsByTagName("*");
+            document.getElementById("tag").innerHTML = tum_tag[3].innerHTML;
+
+        </script>
+    </body>
+</html>
