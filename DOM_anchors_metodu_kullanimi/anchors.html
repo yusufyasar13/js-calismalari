@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onclick="ornek()">
+        <a id = "js" name="js" href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a><br>
+        <a id = "css" name="css" href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a><br>
+        <a id = "html" name="html" href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a><br>
+        Çapa Sayısı: <span id = "sayi"></span><br>
+        1. Çapa: <span id = "ilk"></span><br>
+        2. Çapa: <span id = "ikinci"></span><br>
+        3. Çapa: <span id = "ucuncu"></span><br>
+        Tüm Çapalar: <span id = "tum"></span><br>
+
+        <script type="text/javascript" language="javascript">
+            //anchors: Belge içerisindeki çapa tag'ına sahip tüm elemanların referansını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var sonuc = document.anchors.length;
+            document.getElementById("sayi").innerHTML = sonuc;
+
+            var ilk = document.anchors[0];
+            document.getElementById("ilk").innerHTML = ilk;
+
+            var ikinci = document.anchors[1];
+            document.getElementById("ikinci").innerHTML = ikinci;
+
+            var ucuncu = document.anchors[2];
+            document.getElementById("ucuncu").innerHTML = ucuncu;
+
+            var tum = document.anchors;
+            var deger = [];
+            for(var bas = 0;bas<tum.length;bas++){
+                var islem = tum[bas].innerHTML;
+                deger[bas] = islem;
+            }
+            document.getElementById("tum").innerHTML = deger;
+            
+        </script>
+    </body>
+</html>
