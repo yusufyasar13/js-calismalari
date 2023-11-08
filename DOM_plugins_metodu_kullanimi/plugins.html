@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //plugins: Browser'daki (tarayıcıdaki) tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var deger = navigator.plugins;
+            document.write(deger + "<br>");
+            document.write("-----------<br>");
+            
+            var deger = navigator.plugins.length;
+            document.write(deger + "<br>");
+            document.write("-----------<br>");
+
+
+            var deger = navigator.plugins.length;
+            for(var bas = 0;bas<deger;bas++){
+                var sonuc = navigator.plugins[bas].name;
+                document.write(sonuc + "<br>");
+            }
+            document.write("-----------<br>");
+
+
+            var deger = navigator.plugins.length;
+            for(var bas = 0;bas<deger;bas++){
+                var sonuc = navigator.plugins[bas].filename;
+                document.write(sonuc + "<br>");
+            }
+            document.write("-----------<br>");
+
+
+            var deger = navigator.plugins.length;
+            for(var bas = 0;bas<deger;bas++){
+                var sonuc = navigator.plugins[bas].description;
+                document.write(sonuc + "<br>");
+            }
+            document.write("-----------<br>");
+
+
+            var deger = navigator.plugins.length;
+            for(var bas = 0;bas<deger;bas++){
+                var sonuc = navigator.plugins[bas];
+                document.write(sonuc.name + "<br>");
+                document.write(sonuc.filename + "<br>");
+                document.write(sonuc.description + "<br>");
+
+                var uzun = sonuc.length;
+                for(var say = 0; say<uzun;say++){
+                    var deger2 = sonuc[say];
+                    document.write(deger2.type + "<br>");
+                    document.write(deger2.description + "<br>");
+                    document.write(deger2.suffixes + "<br>");
+
+                }
+                document.write("-----------<br>");
+            }
+            
+
+        </script>
+    </body>
+</html>
