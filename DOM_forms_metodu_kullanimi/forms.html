@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onclick="ornek()">
+
+        <form id="birinci" name="birinci" action="https://www.w3schools.com/js/js_validation.asp" target="_blank" method="post" accept-charset="utf-8" autocomplete="on" enctype="multipart/form-data" novalidate>
+            Adı Soyadı: <input type="text" id="ilk" name="ilk" value="Yusuf Yaşar">
+            Şehir: <input type="text" id="iki" name="iki" value="İstanbul">
+            <input type="submit" value="Buton">
+        </form>
+        <br>
+        <form id="ikinci">
+            Yazılım Dili: <input type="text" id="uc" name="uc" value="JS">
+            Mail: <input type="text" id="dort" name="dort" value="mainadresi@gmail.com">
+            <button>Buton</button>
+        </form>
+        <br>
+        <div id="sayi"></div>
+        <div id="id1"></div>
+        <div id="id2"></div>
+        <div id="id3"></div>
+        <div id="id4"></div>
+        <div id="id5"></div>
+        <div id="id6"></div>
+        <div id="id7"></div>
+        <div id="id8"></div>
+
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //forms: Belge içerisindeki form tag'ına sahip tüm elemanların referansını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var sonuc = document.forms.length;
+            document.getElementById("sayi").innerHTML = "Form sayısı: " + sonuc;
+            
+            var sonuc = document.forms[0].id;
+            document.getElementById("id1").innerHTML = "Birinci Id: " + sonuc;
+
+            var sonuc = document.forms[1].id;
+            document.getElementById("id2").innerHTML = "İkinci Id: " + sonuc;
+
+            var sonuc = document.forms.item(0).id;
+            document.getElementById("id3").innerHTML = "Birinci Id: " + sonuc;
+
+            var sonuc = document.forms.item(1).id;
+            document.getElementById("id4").innerHTML = "İkinci Id: " + sonuc;
+
+            var sonuc = document.forms.namedItem("birinci").innerHTML;
+            document.getElementById("id5").innerHTML = "Kopya1: " + sonuc;
+
+            var sonuc = document.forms.namedItem("ikinci").innerHTML;
+            document.getElementById("id6").innerHTML = "Kopya2: " + sonuc;
+
+            var sonuc = document.forms[0];
+            var uzun = sonuc.length;
+            var dongu = [];
+            for(var bas = 0;bas<uzun;bas++){
+                var islem = sonuc.elements[bas].value;
+                if(islem != ""){
+                    dongu[bas] = islem;
+                }
+            }
+            document.getElementById("id7").innerHTML = "İçerikler1: " + dongu;
+
+            var sonuc = document.forms[0].action;
+            document.getElementById("id8").innerHTML = "Action: " + sonuc;
+
+        </script>
+    </body>
+</html>
