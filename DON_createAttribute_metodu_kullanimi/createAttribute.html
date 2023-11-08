@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            .demo{
+                color:blue;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>JS Programlama Dili</h1>
+
+        <span>Yusuf Yaşar</span> <a id="js">JS</a><br>
+
+        <button onclick="ornek()">Boya</button>
+        <button onclick="ornek2()">Git</button>
+
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //createAttribute(): Belge içerisindeki istenilen bir elemana yeni bir özellik / nitelik node'u (düğümü) oluşturur ve oluşturduğu bu node'u (düğümü) bir node object (düğüm nesnesi) olarak geriye döndürür.
+            // setAttributeNode(): createAttribute() metodu ile oluşturulan özellik node'unu (düğümünü), node object'ine (düğüm nesnesine) uygular. 
+
+            function ornek(){
+                var deger = document.getElementsByTagName("h1")[0];
+                var ozellik = document.createAttribute("class");
+                ozellik.value = "demo";
+                deger.setAttributeNode(ozellik)
+            }
+
+            function ornek2(){
+                var deger = document.getElementById("js");
+                var ozellik = document.createAttribute("href");
+                ozellik.value = "https://www.w3schools.com/js/default.asp";
+                deger.setAttributeNode(ozellik)
+            }
+        
+        </script>
+    </body>
+</html>
