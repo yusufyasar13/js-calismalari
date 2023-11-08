@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onclick="ornek()">
+
+        <img id="bir" src="HTML_Resmi.jpg">
+        <img id="iki" src="CSS_Resmi.jpg">
+        <img id="uc"src="Javascript_Resmi.jpg">
+        <div id="sayi"></div>
+        <div id="src"></div>
+        <div id="src2"></div>
+        <div id="id1"></div>
+        <div id="src3"></div>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //images: Belge içerisindeki img tag'ına sahip tüm elemanların referansını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var sonuc = document.images.length;
+            document.getElementById("sayi").innerHTML = "Resim sayısı: " + sonuc;
+            
+            var sonuc = document.images[0].src;
+            document.getElementById("src").innerHTML = "Resim dosyası: " + sonuc;
+
+            var sonuc = document.images.item(0).src;
+            document.getElementById("src2").innerHTML = "Birinci src: " + sonuc;
+
+            var sonuc = document.images.namedItem("bir").id;
+            document.getElementById("id1").innerHTML = "Id1: " + sonuc;
+
+            document.images[2].width = 167;
+            document.images[2].height = 187;
+
+            var uzun = document.images.length;
+            var metin = "";
+            for(var bas = 0;bas<uzun;bas++){
+                var islem = document.images[bas].src;
+                metin += islem + "<br>";
+            }
+            document.getElementById("src3").innerHTML = metin;
+
+            document.images[0].style.border = "1px solid black";
+            document.images[1].style.border = "1px dotted black";
+            document.images[2].style.border = "1px dashed black";
+
+        </script>
+    </body>
+</html>
