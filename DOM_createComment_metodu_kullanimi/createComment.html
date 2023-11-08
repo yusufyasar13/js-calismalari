@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <button id="but" onclick="ornek()">Ekle</button>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            // createComment(): Belge içerisine yeni bir açıklama node'u (düğümü) oluşturur ve oluşturduğu bu node'u (düğümü) bir node object (düğüm nesnesi) olarak geriye döndürür.
+            // appendChild(): Bir node'u (düğümü) belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır.
+        
+            var sonuc = document.createComment("Açıklama Metni");
+            document.body.appendChild(sonuc);
+
+            function ornek(){
+                var sonuc = document.createComment("Yusuf Yaşar JS");
+                document.body.appendChild(sonuc);
+            }
+            
+
+        </script>
+    </body>
+</html>
