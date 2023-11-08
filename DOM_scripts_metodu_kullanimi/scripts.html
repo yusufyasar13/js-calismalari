@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <script id="bir" type="text/javascript" language="javascript">
+            document.write("JS");
+        </script>
+    </head>
+
+    <body onclick="ornek()">
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //scripts: Belge içerisindeki script tag'ına sahip tüm elemanların referansını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var sonuc = document.scripts;
+            document.write(sonuc + "<br>");
+
+            var sonuc = document.scripts.length;
+            document.write(sonuc + "<br>");
+
+            var sonuc = document.scripts[0].text;
+            document.write(sonuc + "<br>");
+
+            var sonuc = document.scripts.item(0).text;
+            document.write(sonuc + "<br>");
+
+            var sonuc = document.scripts.namedItem("bir").text;
+            document.write(sonuc + "<br>");
+            
+            var sonuc = document.scripts;
+            var uzun = document.scripts.length;
+            for(var bas = 0;bas<uzun;bas++){
+                var islem = sonuc[bas].id;
+                document.write(islem + "<br>");
+            }
+
+            var sonuc = document.scripts;
+            var uzun = document.scripts.length;
+            for(var bas = 0;bas<uzun;bas++){
+                var islem = sonuc[bas].text;
+                document.write(islem + "<br>");
+            }
+            
+
+        </script>
+    </body>
+</html>
