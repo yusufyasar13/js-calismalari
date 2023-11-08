@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onclick="ornek()">
+
+        <embed id="bir" name="bir" src="Cat.gif">
+        <embed id="iki" name="iki" src="Cat.gif">
+        <div id="sayi"></div>
+        <div id="src1"></div>
+        <div id="src2"></div>
+        <div id="src3"></div>
+        
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //embeds: Belge içerisindeki embed veya object tag'ına sahip tüm elemanların referansını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            var sayi = document.embeds.length;
+            document.getElementById("sayi").innerHTML = "Embed sayısı: " + sayi;
+            
+            var src1 = document.embeds[0].src;
+            document.getElementById("src1").innerHTML = "Src degeri: " + src1;
+
+            var src2 = document.embeds.item(1).src;
+            document.getElementById("src2").innerHTML = "Src degeri: " + src2;
+
+            var src3 = document.embeds.namedItem("bir").src;
+            document.getElementById("src3").innerHTML = "Src degeri: " + src3;
+
+            document.embeds[0].width = 200;
+            document.embeds[0].height = 200;
+
+            var sonuc = document.embeds;
+            var uzun = document.embeds.length;
+            for(var bas = 0;bas<uzun;bas++){
+                var islem = sonuc[bas].id;
+                document.write(islem + "<br>");
+            }
+
+        </script>
+    </body>
+</html>
