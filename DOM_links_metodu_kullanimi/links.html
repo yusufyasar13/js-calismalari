@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onclick="ornek()">
+        <button id = "buton" onclick="ornek()">Buton</button><br>
+        <a id = "js" name="js" href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a><br>
+        <a id = "css" name="css" href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a><br>
+        <a id = "html" name="html" href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a><br>
+        Link Sayısı: <span id = "sayi"></span><br><br>
+        1. Link: <span id = "ilk"></span><br>
+        2. Link: <span id = "ikinci"></span><br>
+        3. Link: <span id = "ucuncu"></span><br><br>
+        1. Link2: <span id = "ilk2"></span><br>
+        2. Link2: <span id = "ikinci2"></span><br>
+        3. Link2: <span id = "ucuncu2"></span><br><br>
+        1. Link3: <span id = "ilk3"></span><br>
+        2. Link3: <span id = "ikinci3"></span><br>
+        3. Link3: <span id = "ucuncu3"></span><br><br>
+        Tüm Linkler: <span id = "tum"></span><br>
+
+        <script type="text/javascript" language="javascript">
+            //links: Belge içerisindeki tüm linklerin referansını elde etmek için kullanılır. Referanslar birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            function ornek(){
+                document.links[0].style.border = "1px solid red";
+            }
+
+
+            var sonuc = document.links.length;
+            document.getElementById("sayi").innerHTML = sonuc;
+            
+            
+            var ilk = document.links[0].href;
+            document.getElementById("ilk").innerHTML = ilk;
+
+            var ikinci = document.links[1].href;
+            document.getElementById("ikinci").innerHTML = ikinci;
+
+            var ucuncu = document.links[2].href;
+            document.getElementById("ucuncu").innerHTML = ucuncu;
+
+
+            var ilk2 = document.links.item(0).href;
+            document.getElementById("ilk2").innerHTML = ilk2;
+
+            var ikinci2 = document.links.item(1).href;
+            document.getElementById("ikinci2").innerHTML = ikinci2;
+
+            var ucuncu2 = document.links.item(2).href;
+            document.getElementById("ucuncu2").innerHTML = ucuncu2;
+
+
+            var ilk3 = document.links.namedItem("js").href;
+            document.getElementById("ilk3").innerHTML = ilk3;
+
+            var ikinci3 = document.links.namedItem("css").href;
+            document.getElementById("ikinci3").innerHTML = ikinci3;
+
+            var ucuncu3 = document.links.namedItem("html").href;
+            document.getElementById("ucuncu3").innerHTML = ucuncu3;
+
+
+            var islem = document.getElementsByTagName("a");
+            var dongu = [];
+            var bas = 0;
+            var uzun = islem.length;
+            while(bas<uzun){
+                var bilgi = islem[bas].innerHTML;
+                dongu[bas] = bilgi;
+                bas++;
+            }
+            document.getElementById("tum").innerHTML = dongu;
+            
+        </script>
+    </body>
+</html>
