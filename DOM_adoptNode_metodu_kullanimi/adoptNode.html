@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <iframe src="cerceve.html" style="width: 200px; height: 200px;"></iframe>
+        <iframe src="cerceve.html" style="width: 200px; height: 200px;"></iframe>
+        <br>
+        <button onclick="ornek()">Buton</button>
+        <br>
+
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //adoptNode(): Belge içerisine başka bir belgeden node (düğüm) eklemek için kullanılır. Eklenecek olan node'un (düğümün) varsa tüm alt node'larıda (düğümleride) işleme dahil edilerek ilgili tüm node'lar (düğümler) diğer belgeden kaldırılır.
+
+            function ornek(){
+                var cerceve = document.getElementsByTagName("IFRAME")[0];
+                var alan = cerceve.contentWindow.document.getElementsByTagName("DIV")[0];
+                var sonuc = document.adoptNode(alan);
+                document.body.appendChild(sonuc)
+            }
+            
+        </script>
+    </body>
+</html>
