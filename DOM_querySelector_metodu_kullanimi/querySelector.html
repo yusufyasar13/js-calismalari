@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div class="bir">Yusuf</div>
+        <p class="bir">Yusuf</p>
+        <div class="iki">Yaşar</div>
+        <div id="uc">Diller:</div>
+        <div id="dort"><span id="dort1">JS</span></div>
+        <div class="uc"><span id="uc1">CSS</span></div>
+        <div class="dort"><span id="dort2">HTML</span></div>
+        <p id="sonuc"></p>
+
+        <button onclick="ornek()">İşlem</button>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //querySelector(): CSS (Cascading Style Sheets) (Basamaklı Stil Şablonları) seçicileri ile belgedeki bir elemanın referansını elde etmek için kullanılır.
+
+            function ornek(){
+                document.querySelector(".bir").style.fontSize = "50px";
+                document.querySelector("p.bir").style.color = "blue";
+                document.querySelector("#sonuc").innerHTML = "CSS HTML";
+                document.querySelector("div#dort>span#dort1").style.color = "red";
+                document.querySelector("div#dort+div").style.color = "pink";
+
+            }
+            
+        </script>
+    </body>
+</html>
