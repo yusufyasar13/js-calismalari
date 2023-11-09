@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <iframe id="cerceve" src="anasayfa.html" style="width: 300px; height: 300px;"></iframe>
+        <br>
+        <button onclick="ornek()">Buton</button>
+        <br>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //importNode(): Belge içerisine başka bir belgeden node (düğüm) eklemek için kullanılır. Eklenecek olan node'un (düğümün) varsa tüm alt node'larıda (düğümleride) işleme dahil edilir.
+            //appendChild(): Bir node'u (düğümü) belirtilecek olan herhangi bir elemanın inçerisine en sonda olmak üzere eklemek için kullanılır.
+
+            function ornek(){
+                cerceve = document.getElementById("cerceve");
+                var alan = cerceve.contentWindow.document.getElementsByTagName("DIV")[0];
+                var sonuc = document.importNode(alan, true);
+                document.body.appendChild(sonuc);
+            }
+            
+            
+        </script>
+    </body>
+</html>
