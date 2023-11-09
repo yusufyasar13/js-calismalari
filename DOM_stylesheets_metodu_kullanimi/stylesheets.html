@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="stil.css">
+        <link type="text/css" rel="stylesheet" href="stil2.css">
+        <style>
+            body{
+                color: green;
+                background-color: peru;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        Yusuf Yaşar JS <br>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //styleSheets: Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Stil sayfası referansları birden fazla ise her stil sayfası referansı döngü ile elde edilebilir.
+
+            
+            var islem = document.styleSheets;
+            document.write(islem + "<br>");
+            console.log(islem);
+            
+            var islem = document.styleSheets.length;
+            document.write(islem + "<br>");
+
+            var islem = document.styleSheets[0];
+            document.write(islem + "<br>");
+
+            var islem = document.styleSheets[2].cssRules[0].cssText;
+            document.write(islem + "<br>");
+
+            var islem = document.styleSheets[0].href;
+            document.write(islem + "<br>");
+
+            var islem = document.styleSheets[0].type;
+            document.write(islem + "<br>");
+
+            var islem = document.styleSheets[2].cssRules;
+            var uzun = document.styleSheets[2].cssRules.length;
+            var dizi = [];
+            for(var bas = 0;bas<uzun;bas++){
+                var sonuc = document.styleSheets[2].cssRules[bas].cssText;
+                dizi[bas] = sonuc;
+            }
+            document.write(dizi + "<br>");
+
+            document.styleSheets[2].cssRules[0].style.color = "blue";
+
+        </script>
+    </body>
+</html>
