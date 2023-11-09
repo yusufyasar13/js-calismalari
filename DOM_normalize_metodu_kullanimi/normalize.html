@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body onload="ornek2()">
+        
+        <button onclick="ornek1()">Node Ekle</button>
+        <button onclick="ornek2()">Normalize</button>
+        <div id="sayi"></div> 
+        
+        <script type="text/javascript" language="javascript">
+            //normalize(): Belge içerisindeki boş text node'larını (metin düğümlerini) kaldırarak bitişik node'a (düğüme) katılmasını sağlar.
+
+            function ornek1(){
+                var islem = document.createTextNode("Yeni Node");
+                var sonuc = document.body;
+                sonuc.appendChild(islem);
+                var islem = document.getElementById("sayi");
+                islem.innerHTML =  sonuc.childNodes.length;
+
+
+            }
+
+
+            function ornek2(){
+                document.normalize();
+                var islem = document.body;
+                var sonuc = document.getElementById("sayi");
+                sonuc.innerHTML = islem.childNodes.length;
+
+            }
+            
+        </script>
+    </body>
+</html>
