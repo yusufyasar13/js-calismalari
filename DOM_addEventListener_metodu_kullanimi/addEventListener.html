@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div id="sonuc"></div>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //addEventListener(): Belgeye event (olay) işaretleyicisi / dinleyicisi eklemek için kullanılır. İşaretlenen / dinlenen event (olay) belgede gerçekleştirilecek olur ise belirtilecek olan fonksiyon veya fonksiyonlar çalışır.
+
+            // document.addEventListener("click", function(){
+            //     alert("Tıkla1!");
+            // });
+
+            // document.addEventListener("click", ornek1);
+            // function ornek1(){
+            //     alert("Tıkla2!");
+            // };
+            
+            // document.addEventListener("mouseover", ornek2);
+            // function ornek2(){
+            //     document.getElementById("sonuc").innerHTML += "Mouse Over <br>";
+            // };
+
+            // document.addEventListener("mouseout", ornek3);
+            // function ornek3(){
+            //     document.getElementById("sonuc").innerHTML += "Mouse Out <br>";
+            // };
+
+            // document.addEventListener("click", ornek4);
+            // function ornek4(){
+            //     document.body.style.background= "green";
+            // };
+
+            document.addEventListener("click", ornek5);
+            function ornek5(){
+                document.getElementById("sonuc").innerHTML += Math.random() + "<br>";
+            };
+
+        </script>
+    </body>
+</html>
