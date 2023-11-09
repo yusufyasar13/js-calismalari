@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div id="alan1" dir="ltr">javascript css html</div>
+        <div id="alan2" dir="rtl">javascript css html</div>
+        <div id="alan3"></div>
+        <div id="alan4">javascript css html</div>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            // dir: Belge içerisindeki metinlerin yazılış yönü referansını elde etmek için kullanılır. Ayrıca belge içerisindeki metinlerin yazılış yönünün atamasını ayarlamak içinde kullanılır.
+            // ltr:	left to right (soldan sağa)
+            // rtl:	right to left (sağdan sola)
+            
+            var islem = document.getElementById("alan1").dir;
+            document.getElementById("alan3").innerHTML = islem;
+
+            document.getElementById("alan4").dir = "rtl";
+            
+        </script>
+    </body>
+</html>
