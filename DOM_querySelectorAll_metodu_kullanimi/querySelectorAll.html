@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <h3 class="deneme">Yusuf<span class="deneme">Yaşar</span><span class="deneme">JS</span></h3>
+        <div class="bir">Yusuf</div>
+        <div class="iki">Yaşar</div>
+        <div class="uc">JS</div>
+        <p class="dort">CSS</p>
+        <p class="bes">HTML</p>
+        <br>
+        <span id="sonuc"></span>
+        <br>
+        <button onclick="ornek()">Buton</button>
+
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //querySelectorAll(): CSS seçicileri ile belgedeki eleman veya elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+            function ornek(){
+                var islem = document.querySelectorAll("div").length;
+                document.getElementById("sonuc").innerHTML = "Div: " + islem;
+
+                document.querySelectorAll("div")[0].style.backgroundColor = "green";
+
+                document.querySelectorAll("div")[2].innerHTML = "JavaScript";
+
+                document.querySelectorAll("p")[0].style.color = "blue";
+
+                document.querySelectorAll(".iki")[0].style.fontSize = "20px";
+
+                document.querySelectorAll("p.bes")[0].style.color = "orange";
+
+                var sayi =  document.querySelectorAll("span.deneme").length;
+                for(var bas=0;bas<sayi;bas++){
+                    document.querySelectorAll("span.deneme")[bas].style.color = "pink";
+                }
+            }
+            
+        </script>
+    </body>
+</html>
