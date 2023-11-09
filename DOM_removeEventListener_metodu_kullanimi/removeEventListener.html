@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+
+        <div id="sonuc"></div>
+        <button onclick="son()">Durdur</button>
+
+        <script id="iki" type="text/javascript" language="javascript">
+            //removeEventListener(): Belgeye addEventListener() metodu ile eklenmiş olan event (olay) işaretleyicisini / dinleyicisini silmek için kullanılır.
+
+
+            // document.addEventListener("click", function(){
+            //     alert("Tıkla1!");
+            // });
+
+            // document.addEventListener("click", ornek1);
+            // function ornek1(){
+            //     alert("Tıkla2!");
+            //     document.removeEventListener("click",ornek1);
+            // };
+            
+            document.addEventListener("mousemove", ornek2);
+            function ornek2(){
+                document.getElementById("sonuc").innerHTML = Math.random();
+            };
+
+            function son(){
+                document.removeEventListener("mousemove",ornek2); 
+            }
+
+            
+        </script>
+    </body>
+</html>
