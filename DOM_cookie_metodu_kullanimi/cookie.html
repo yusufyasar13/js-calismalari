@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        
+        <div id="sonuc"></div>
+        
+        <script type="text/javascript" language="javascript">
+            /*
+            Cookie'lerin (çerezlerin) yapısı :
+            1. Cookie (çerez) adı
+            2. Cookie (çerez) değeri
+            3. Cookie'nin (çerezin) yaşam süresi
+            4. Path (yol)
+
+            Cookie (çerez) adı = Cookie (çerez) değeri ; Cookie'nin (çerezin) yaşam süresi ; Path (yol)
+            */
+
+            var zaman = new Date();
+            zaman.setMonth(zaman.getMonth + 1);
+
+            var cerez1_adi = "isim soyisim";
+            var cerez1_degeri = "Yusuf Yaşar";
+
+            var cerez2_adi = "diller";
+            var cerez2_degeri = "JS CSS HTML";
+
+            document.cookie = escape(cerez1_adi) + "=" + escape(cerez1_degeri) + ";expires=" + zaman.toGMTString() + ";path=/js"; //www.***.com/js
+            document.cookie = escape(cerez2_adi) + "=" + escape(cerez2_degeri) + ";";
+
+            var cerezler = document.cookie;
+            document.getElementById("sonuc").innerHTML = unescape(cerezler);
+
+            var zaman = new Date();
+            zaman.setMonth(zaman.getMonth - 1);
+
+            document.cookie = escape(cerez1_adi) + "=" + ";expires=" + zaman.toGMTString();
+            document.cookie = escape(cerez2_adi) + "=" + ";";
+
+            
+        </script>
+    </body>
+</html>
