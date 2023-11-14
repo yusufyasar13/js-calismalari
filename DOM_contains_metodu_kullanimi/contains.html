@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <div id="alan">
+            <p id="bir">Yusuf</p>
+            <p id="iki">Yaşar</p>
+        </div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        
+        <script type="text/javascript" language="javascript">
+            //contains(): Belge içerisindeki herhangi bir node'un (düğümün), başka bir node'un (düğümün) alt node'u düğümü olup olmadığını kontrol ederek, boolean (mantıksal) veri türünde sonucu geriye döndürür.
+
+            var islem = document.getElementById("bir");
+            var sonuc = document.getElementById("alan").contains(islem);
+            document.getElementById("sonuc1").innerHTML = sonuc;
+
+            var islem = document.getElementById("alan");
+            var sonuc = document.getElementById("bir").contains(islem);
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+            
+
+        </script>
+    </body>
+</html>
