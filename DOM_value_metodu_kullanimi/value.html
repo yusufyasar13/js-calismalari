@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        
+        <div id="birinci" name="birinci" style="border:1px solid red">JS</div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        <div id="sonuc4"></div>
+
+        <script type="text/javascript" language="javascript">
+            // value: Belge içerisindeki HTML elemanına eklenmiş olan özellik değerinin referansını elde etmek için kullanılır. HTML elemanı içerisindeki özellik sayısı birden fazla ise her bir özellik değeri referansı döngü ile elde edilebilir.
+
+            var sonuc1 = document.getElementById("birinci").attributes[0].value;
+            document.getElementById("sonuc1").innerHTML = sonuc1;
+
+            var sonuc2 = document.getElementById("birinci").attributes[1].value;
+            document.getElementById("sonuc2").innerHTML = sonuc2;
+
+            var sonuc3 = document.getElementById("birinci").attributes[2].value;
+            document.getElementById("sonuc3").innerHTML = sonuc3;
+
+            var deger = document.getElementById("birinci").attributes
+            var adet = deger.length;
+            var metin = "";
+            var bas = 0;
+            while(bas<adet){
+                var sonuc4 = deger[bas].value;
+                metin += sonuc4 + " ";
+                bas++
+            }
+            document.getElementById("sonuc4").innerHTML = metin;
+
+
+        </script>
+    </body>
+</html>
