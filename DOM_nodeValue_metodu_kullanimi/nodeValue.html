@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <button onclick="ornek()">Buton</button><br>
+        <div id="ornek">JS <!-- Deneme Yazısı --></div>
+        <div id="sonuc"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            //nodeValue: Belge içerisindeki herhangi bir node'un (düğümün) değerini elde etmek için kullanılır.
+
+
+            function ornek(){
+                var islem = document.getElementById("ornek").childNodes[0].nodeValue;
+                document.getElementById("sonuc").innerHTML = islem;
+
+                var islem = document.getElementById("ornek").childNodes[1].nodeValue;
+                document.getElementById("sonuc2").innerHTML = islem;
+
+                var deger =  document.getElementById("ornek");
+                var tur = deger.childNodes[0].nodeType;
+                var isim = deger.childNodes[0].nodeName;
+                var icerik = deger.childNodes[0].nodeValue;
+
+                document.getElementById("sonuc3").innerHTML = tur + " " + isim + " " + icerik;
+            }
+           
+
+        </script>
+    </body>
+</html>
