@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        
+        <div id="ornek" lang="tr-TR">JS</div>
+        <div id="ornek2">CSS</div>
+
+        <div id="sonuc"></div>
+        <div id="sonuc2"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            //lang: Belge içerisindeki herhangi bir HTML elemanının lang değerini elde etmek veya ayarlamak için kullanılır.
+
+
+            var sonuc = document.getElementById("ornek").lang;
+            document.getElementById("sonuc").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("ornek2").lang = "en";
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+
+        </script>
+    </body>
+</html> 
