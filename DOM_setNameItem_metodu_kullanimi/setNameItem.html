@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            .deneme{
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div>JS</div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            //setNamedItem(): Belge içerisindeki HTML elemanına özellik node'u (düğüme) ve değeri eklemek için kullanılır.
+
+            var islem = document.getElementsByTagName("DIV")[0];
+            var ekle = document.createAttribute("style");
+            ekle.value = "color: blue";
+            islem.attributes.setNamedItem(ekle);
+
+            var islem = document.getElementsByTagName("DIV")[0];
+            var ekle = document.createAttribute("class");
+            ekle.value = "deneme";
+            islem.attributes.setNamedItem(ekle);
+
+            var islem = document.getElementsByTagName("DIV")[0];
+            var ekle = document.createAttribute("dir");
+            ekle.value = "rtl";
+            islem.attributes.setNamedItem(ekle);
+
+
+        </script>
+    </body>
+</html>
