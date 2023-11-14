@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            .bir{
+                color: red;
+            }
+            .iki{
+                background-color: green;
+            }
+            .uc{
+                width: 300px;
+                height: 25px;
+                padding-top: 5px;
+                text-align: center;
+                border: 1px dotted black;
+            }
+            .dort{
+                font-size: 25px;
+            }
+            .bes{
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <button onclick="ornek()">İşlem Yap</button>
+        <br>
+        <div id="alan" class="bir iki uc">JS</div>
+        <br>
+        <div id="sonuc"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        <div id="sonuc4"></div>
+        <div id="sonuc5"></div>
+        <div id="sonuc6"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            // classList: Belge içerisindeki herhangi bir HTML elemanına atanmış olan class listesi isimlerini elde etmek veya ayarlamak için kullanılır.
+            /*
+            item: Sınıf seçicisinin adını döndürür.
+            length: Sınıf seçicisinin sayısını döndürür.
+            add: Sınıf seçicisi ekler.
+            remove: Sınıf seçicisi kaldırır / siler.
+            toggle: Sınıf seçicisi ekler veya kaldırır.
+            contains: Sınıf seçicisi arar.
+            */
+
+            function ornek(){
+                var deger = document.getElementById("alan").classList;
+                document.getElementById("sonuc").innerHTML = deger;
+
+                var deger = document.getElementById("alan").classList.item(0);
+                document.getElementById("sonuc2").innerHTML = deger;
+
+                var deger = document.getElementById("alan").classList.item(1);
+                document.getElementById("sonuc3").innerHTML = deger;
+
+                var deger = document.getElementById("alan").classList.item(2);
+                document.getElementById("sonuc4").innerHTML = deger;
+
+                var deger = document.getElementById("alan").classList.length;
+                document.getElementById("sonuc5").innerHTML = deger;
+
+                document.getElementById("alan").classList.add("dort");
+                
+                document.getElementById("alan").classList.remove("bir");
+
+                document.getElementById("alan").classList.toggle("iki");
+
+                document.getElementById("alan").classList.toggle("bes");
+
+                var deger = document.getElementById("alan").classList.contains("iki");
+                document.getElementById("sonuc6").innerHTML = deger;
+
+
+            }
+            
+            
+            
+    
+        </script>
+    </body>
+</html>
