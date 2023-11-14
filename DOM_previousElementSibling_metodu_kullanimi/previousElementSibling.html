@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <div id="alan">
+            <p id="bir">Yusuf</p>
+            <div id="uc">JS</div>
+            <p id="iki">Yaşar</p>
+            <div id="dort">CSS</div>
+        </div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        <div id="sonuc4"></div>
+        <div id="sonuc5"></div>
+        <div id="sonuc6"></div>
+
+        
+        <script type="text/javascript" language="javascript">
+            //previousElementSibling: Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani kardeş olan elemanlardan, belirtilecek olan elemandan önce gelen ilk elemanı elde etmek için kullanılır.
+
+            var sonuc = document.getElementById("dort").previousElementSibling;
+            document.getElementById("sonuc1").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("iki").previousElementSibling;
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("dort").previousElementSibling.tagName;
+            document.getElementById("sonuc3").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("iki").previousElementSibling.tagName;
+            document.getElementById("sonuc4").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("dort").previousElementSibling.id;
+            document.getElementById("sonuc5").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("iki").previousElementSibling.id;
+            document.getElementById("sonuc6").innerHTML = sonuc;
+
+            document.getElementById("dort").previousElementSibling.style.color = "red";
+            
+        </script>
+    </body>
+</html>
