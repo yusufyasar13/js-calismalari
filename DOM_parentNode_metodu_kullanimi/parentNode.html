@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <p id="ornek">JS</p>
+        <div>
+            <div id="bir">Yusuf</div>
+            <div id="iki">Yaşar</div>
+        </div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+
+        <script type="text/javascript" language="javascript">
+            //parentNode: Belge içerisindeki herhangi bir node'un (düğümün) bir üst node'unu (düğümünü) elde etmek için kullanılır.
+
+
+            var sonuc = document.getElementById("ornek").parentNode;
+            document.getElementById("sonuc1").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("bir").parentNode;
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("iki").parentNode.parentNode;
+            document.getElementById("sonuc3").innerHTML = sonuc;
+
+            document.getElementById("bir").parentNode.style.backgroundColor = "yellow";
+
+        </script>
+    </body>
+</html>
