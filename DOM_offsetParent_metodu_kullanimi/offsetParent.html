@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body>
+        <div id="deneme">JS <span id="bir">CSS</span></div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        
+        <script type="text/javascript" language="javascript">
+            //offsetParent: Belge içerisindeki herhangi bir HTML elemanının içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesini elde etmek için kullanılır.
+
+            var sonuc = document.getElementById("deneme").offsetParent;
+            document.getElementById("sonuc1").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("bir").offsetParent;
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+        </script>
+    </body>
+</html>
