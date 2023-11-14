@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            .ornek{
+                color: red;
+                border: 1px solid blue;
+                background-color: green;
+            }
+            .demo{
+                color: black;
+                border: 1px solid brown;
+                background-color: grey;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="kimlik" name="isim" class="ornek">JS</div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            //item(): Belge içerisindeki HTML elemanına eklenmiş olan özellik node'u (düğümü) referansını elde etmek veya ayarlamak için kullanılır. HTML elemanı içerisindeki özellik sayısı birden fazla ise her bir özellik node' (düğümü) referansı döngü ile elde edilebilir.
+
+            var islem = document.getElementById("kimlik");
+            var sonuc1 = islem.attributes.item(0).name;
+            document.getElementById("sonuc1").innerHTML = sonuc1;
+            
+            var islem = document.getElementById("kimlik");
+            var sonuc2 = islem.attributes.item(0).value;
+            document.getElementById("sonuc2").innerHTML = sonuc2;
+
+            var islem = document.getElementById("ornek");
+            islem.attributes.item(2).value = "demo";
+
+            var islem = document.getElementById("ornek");
+            var adet = islem.attributes.length;
+            var metin = "";
+            for(var bas = 0;bas<adet;bas++){
+                var sonuc3 = islem.attributes.item(bas).name + " : " + islem.attributes.item(bas).value + "<br>";
+                metin += sonuc3;
+            }
+            document.getElementById("sonuc").innerHTML = metin;
+    
+        </script>
+    </body>
+</html>
