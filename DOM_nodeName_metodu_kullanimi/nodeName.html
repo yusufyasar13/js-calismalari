@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+    </head>
+
+    <body><!-- Deneme Yazısı -->
+        <button onclick="ornek()">Buton</button><br>
+        <div id="ornek">JS</div>
+        <div id="sonuc"></div>
+        <div id="sonuc2"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            //nodeName: Belge içerisindeki herhangi bir node'un (düğümün) adını elde etmek için kullanılır.
+
+            function ornek(){
+                var sonuc = document.getElementById("ornek").nodeName;
+                document.getElementById("sonuc").innerHTML = sonuc;
+
+                var islem = document.body.childNodes;
+                var metin = "";
+                for(bas=0;bas<islem.length;bas++){
+                    metin = metin + islem[bas].nodeName + "<br>";
+                }
+                document.getElementById("sonuc2").innerHTML = metin;
+            }
+           
+    
+        </script>
+    </body>
+</html>
