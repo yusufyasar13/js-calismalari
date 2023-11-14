@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head id="ornek">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <style>
+            .deneme{
+                font-size: 25px;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="birinci" name="birinci" style="background-color: blue;" class="deneme">JS</div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        <div id="sonuc4"></div>
+        <div id="sonuc5"></div>
+        
+        
+        <script type="text/javascript" language="javascript">
+            // name: Belge içerisindeki HTML elemanına eklenmiş olan özellik adı referansını elde etmek için kullanılır. HTML elemanının içerisindeki özellik sayısı birden fazla ise her bir özellik adı referansı döngü ile elde edilebilir.
+
+            var sonuc = document.getElementById("birinci").attributes[0].name;
+            document.getElementById("sonuc1").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("birinci").attributes[1].name;
+            document.getElementById("sonuc2").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("birinci").attributes[2].name;
+            document.getElementById("sonuc3").innerHTML = sonuc;
+
+            var sonuc = document.getElementById("birinci").attributes[3].name;
+            document.getElementById("sonuc4").innerHTML = sonuc;
+
+            var adet = document.getElementById("birinci").attributes.length;
+            var dizi = [];
+            for(var bas = 0;bas<adet;bas++){
+                var sonuc = document.getElementById("birinci").attributes[bas].name;
+                dizi[bas] = sonuc;
+            }
+            document.getElementById("sonuc5").innerHTML = dizi;
+
+        </script>
+    </body>
+</html>
