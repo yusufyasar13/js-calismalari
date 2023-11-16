@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            .ornek{
+                background-color: yellow;
+                width: 250px;
+                height: 130px;
+                border: 1px dotted black;
+                padding: 10px;
+                text-align: center;
+                padding-top: 100px;
+            }
+            .ornek2{
+                background-color: white;
+                padding: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="ornek" onmouseleave="demo()"><span id="alan" class="ornek2" onmouseleave="demo2()">JS</span></div>
+        
+
+        <script type="text/javascript" language="javascript">
+            //onmouseleave : Belge içerisindeki herhangi bir elemanın mouse (fare) ile kapsama alanından çıkış yapıldığında belirtilecek olan fonksiyon çalışır.
+
+            function demo(){
+                document.getElementById("alan").style.backgroundColor = "green";
+            }
+
+            function demo2(){
+                document.getElementById("alan").style.backgroundColor = "purple";
+            }
+
+        </script>
+    </body>
+</html>
