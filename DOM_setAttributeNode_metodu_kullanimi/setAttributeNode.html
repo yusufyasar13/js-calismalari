@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+    </head>
+
+    <body>
+        <button onclick="ornek()">Buton</button>
+        <br>
+        <a id="baglanti" target="_blank">Google</a>
+        
+                
+        <script type="text/javascript" language="javascript">
+            //setAttributeNode(): Belge içerisindeki herhangi bir HTML elemanına createAttribute() metodu ile oluşturulan özellik node'unu (düğümünü) ve değerini, node object'ine (düğüm nesnesine) uygulamak için kullanılır.
+
+            function ornek(){
+                var baglan = document.getElementById("baglanti");
+                var ekle = document.createAttribute("href");
+                ekle.value = "https://www.google.com.tr/";
+                baglan.setAttributeNode(ekle);
+
+                var ekle2 = document.createAttribute("style");
+                ekle2.value = "color:blue";
+                baglan.setAttributeNode(ekle2);
+            }
+           
+        </script>
+    </body>
+</html>
