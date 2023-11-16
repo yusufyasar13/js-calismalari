@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+    
+        </style>
+    </head>
+
+    <body>
+
+        <button onmousedown="ornek()">Tıkla</button>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            //button : Belge içerisinde mouse (fare) ile tıklama event'ı (olayı) gerçekleştiğinde mouse'un (farenin) hangi tuşuna basıldığı değerini geriye döndürür.
+            /*
+            0 :	Sol Tuş
+            1 :	Orta Tuş & Tekerlek
+            2 :	Sağ Tuş
+
+            Internet Explorer (8 ve 8 öncesi sürümleri)
+            1 :	Sol Tuş
+            2 :	Sağ Tuş
+            4 :	Orta Tuş & Tekerlek
+*/
+
+            function ornek(){
+                var tusdegeri =	event.button;
+                if(tusdegeri==0){
+                    document.getElementById("sonuc").innerHTML = 	"Mouse'un sol tuşuna basıldı";
+                }else if(tusdegeri==1){
+                    document.getElementById("sonuc").innerHTML = 	"Mouse'un orta tuşuna & tekerler tuşuna basıldı";
+                }else if(tusdegeri==2){
+                    document.getElementById("sonuc").innerHTML = 	"Mouse'un sağ tuşuna basıldı";
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>
