@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onmouseout="ornek()">Ayrıl</button>
+        <div id="sonuc"></div>
+        <br>
+        <img id="dunya" src="dunya.png" border="0" width="75" height="75" onmouseout="ornek2()" onmouseover="ornek3()">
+        <br>
+        <div onmouseover="aktif1()" onmouseout="pasif1()">JS</div>
+        <div onmouseover="aktif2()" onmouseout="pasif2()">CSS</div>
+        <div onmouseover="aktif3()" onmouseout="pasif3()">HTML</div>
+        
+
+        
+
+        <script type="text/javascript" language="javascript">
+            //onmouseout : Belge içerisindeki herhangi bir elemanın mouse (fare) ile üzerinden gidildiğinde belirtilecek olan fonksiyon çalışır.
+
+            function ornek(){
+                document.getElementById("sonuc").innerHTML = "Ayrıldı!";
+            }
+
+            function ornek2(){
+                document.getElementById("dunya").style.width = "150px";
+                document.getElementById("dunya").style.height = "150px";
+            }
+
+            function ornek3(){
+                document.getElementById("dunya").style.width = "75px";
+                document.getElementById("dunya").style.height = "75px";
+            }
+
+            function aktif1(){
+                document.getElementsByTagName("DIV")[1].style.backgroundColor = "blue";
+            }
+            function aktif2(){
+                document.getElementsByTagName("DIV")[2].style.backgroundColor = "blue";
+            }
+            function aktif3(){
+                document.getElementsByTagName("DIV")[3].style.backgroundColor = "blue";
+            }
+
+            function pasif1(){
+                document.getElementsByTagName("DIV")[1].style.backgroundColor = "white";
+            }
+            function pasif2(){
+                document.getElementsByTagName("DIV")[2].style.backgroundColor = "white";
+            }
+            function pasif3(){
+                document.getElementsByTagName("DIV")[3].style.backgroundColor = "white";
+            }
+
+
+        </script>
+    </body>
+</html>
