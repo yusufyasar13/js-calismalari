@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            body{
+                margin:0;
+            }
+            .mouse{
+                background-color:#F1F1F1;
+                text-align:center;
+                width:100%;
+                height:500px;
+                border:1px dotted black;
+            }
+            .sonuc{
+                background-color: #f1f1f1;
+                margin: 0;
+                margin-top: 5px;
+                padding: 5px;
+                width: 100%;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="mouse" onmousemove="ornek()">Gezdir</div>
+        <div class="sinif">Koordinat: (X) <span id="degerx"></span>(Y) <span id="degery"></span></div>
+
+        <script type="text/javascript" language="javascript">
+            //pageX : Belge içerisindeki herhangi bir mouse (fare) event'ı (olayı) gerçekleştiğinde browser (tarayıcı) penceresine / sayfaya göre mouse'un (farenin) yatay konum koordinatının değerini geriye döndürür.
+            //pageY : Belge içerisindeki herhangi bir mouse (fare) event'ı (olayı) gerçekleştiğinde browser (tarayıcı) penceresine / sayfaya göre mouse'un (farenin) dikey konum koordinatının değerini geriye döndürür.
+
+            function ornek(){
+                var degerx = event.pageX;
+                var degery = event.pageY;
+                document.getElementById("degerx").innerHTML = degerx;
+                document.getElementById("degery").innerHTML = degery;
+            }
+
+        </script>
+    </body>
+</html>
