@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Ekle 1</button>
+        <button onclick="ornek2()">Ekle 2</button>
+        <ul id="bir">
+            <li>JS</li>
+            <li>CSS</li>
+            <li>HTML</li>
+        </ul>
+        <br>
+        <ul id="iki">
+            <li>Yusuf</li>
+            <li>Yaşar</li>
+        </ul>
+
+        <script type="text/javascript" language="javascript">
+            //appendChild(): Bir node'u (düğümü) belge içerisinde belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır.
+
+            function ornek(){
+                var eleman = document.createElement("LI");
+                var icerik = document.createTextNode("PHP");
+                eleman.appendChild(icerik);
+                document.getElementById("bir").appendChild(eleman)
+            }
+
+            function ornek2(){
+                var eleman = document.createElement("LI");
+                var icerik = document.createTextNode("Python");
+                eleman.appendChild(icerik);
+                document.getElementById("iki").appendChild(eleman)
+            }
+
+        </script>
+    </body>
+</html>
