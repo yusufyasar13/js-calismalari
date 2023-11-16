@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Çıkar</button>
+        <ol id="liste">
+            <li id="bir">JS</li>
+            <li id="iki">CSS</li>
+            <li id="uc">HTML</li>
+        </ol>
+             
+        <script type="text/javascript" language="javascript">
+            //removeChild(): Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u (düğümü) kaldırmak / silmek için kullanılır.
+
+            function ornek(){
+                var islem = document.getElementById("liste")
+                islem.removeChild(document.getElementById("bir"))
+
+                var islem = document.getElementById("liste")
+                islem.removeChild(islem.childNodes[2])
+            }
+
+        </script>
+    </body>
+</html>
