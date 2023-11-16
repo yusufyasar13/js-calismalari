@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            .ornek{
+                width:200px;
+                padding:10px;
+                border-left:50px solid black;
+                border-top:10px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="alan" class="ornek">JS</div>
+        <br /><br />
+        <div id="sonuc"></div>
+                
+        <script type="text/javascript" language="javascript">
+            //clientLeft: Belge içerisindeki herhangi bir HTML elemanının sol kenarlık genişliği değerini elde etmek için kullanılır.
+            //clientTop: Belge içerisindeki herhangi bir HTML elemanının üst kenarlık yüksekliği değerini elde etmek için kullanılır.
+
+            var solkenarlikdegeri =	document.getElementById("alan").clientLeft;
+            var ustkenarlikdegeri =	document.getElementById("alan").clientTop;
+            document.getElementById("sonuc").innerHTML = solkenarlikdegeri + "px <br>" + ustkenarlikdegeri + "px";
+
+        </script>
+    </body>
+</html>
