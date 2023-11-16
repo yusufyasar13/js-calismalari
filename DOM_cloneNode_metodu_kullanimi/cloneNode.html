@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Klonla</button>
+        <ul id="liste1">
+            <li id="bir">JS</li>
+            <li id="iki">CSS</li>
+            <li id="uc">HTML</li>
+        </ul>
+        <br>
+        <ul id="liste2">
+            <li id="dort">Yusuf</li>
+            <li id="bes">Yaşar</li>
+            <li id="alti">Python</li>
+        </ul>
+
+        <script type="text/javascript" language="javascript">
+            //cloneNode(): Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u (düğümü) kopyalamak için kullanılır.
+
+            function ornek(){
+                var kopyadugum = document.getElementById("liste1").childNodes[1];
+                var kopyala = kopyadugum.cloneNode(true);
+                document.getElementById("liste2").appendChild(kopyala);
+
+                var kopyadugum = document.getElementsByTagName("UL")[0];
+                var kopyala = kopyadugum.cloneNode(true);
+                document.body.appendChild(kopyala);
+            }
+
+
+        </script>
+    </body>
+</html>
