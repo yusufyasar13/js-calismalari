@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            .deneme{
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="ornek()">Buton</button>
+        <br>
+        <a id="baglanti" href="https://www.google.com.tr/" target="_blank" class="deneme">Google</a>
+        
+                
+        <script type="text/javascript" language="javascript">
+            //removeAttribute(): Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğini kaldırmak / silmek için kullanılır
+
+
+            function ornek(){
+                document.getElementById("baglanti").removeAttribute("href");
+                document.getElementById("baglanti").removeAttribute("class");
+            }
+           
+        </script>
+    </body>
+</html>
