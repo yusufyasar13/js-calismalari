@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+    </head>
+
+    <body>
+
+        <div id="kimlik" name="deneme" style="font-weight: bold; font-size: 25px;" class="sinif" contenteditable="true">JS</div>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        <div id="sonuc3"></div>
+        <div id="sonuc4"></div>
+        <div id="sonuc5"></div>
+        
+        <script type="text/javascript" language="javascript">
+            //getAttribute() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğinin değerini elde etmek için kullanılır.
+
+            var deger1	=	document.getElementsByTagName("DIV")[0].getAttribute("id");
+            var deger2	=	document.getElementsByTagName("DIV")[0].getAttribute("name");
+            var deger3	=	document.getElementsByTagName("DIV")[0].getAttribute("style");
+            var deger4	=	document.getElementsByTagName("DIV")[0].getAttribute("class");
+            var deger5	=	document.getElementsByTagName("DIV")[0].getAttribute("contenteditable");
+
+            document.getElementById("sonuc1").innerHTML = deger1;
+            document.getElementById("sonuc2").innerHTML = deger2;
+            document.getElementById("sonuc3").innerHTML = deger3;
+            document.getElementById("sonuc4").innerHTML = deger4;
+            document.getElementById("sonuc5").innerHTML = deger5;
+
+            
+        </script>
+    </body>
+</html>
