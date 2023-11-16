@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body onhashchange="ornek2()">
+        <button onclick="ornek()">Buton</button>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        
+
+        <script type="text/javascript" language="javascript">
+            //onhashchange : Sayfa URL'inin (Uniform resource locator) (nizami kaynak bulucu) bağlantı bölümünde değişiklik olur ise belirtilecek fonksiyon çalışır.
+
+            function ornek(){
+                location.hash = "Sayfa";
+                var deger = location.hash;
+                document.getElementById("sonuc1").innerHTML = deger;
+            }
+
+            function ornek2(){
+                document.getElementById("sonuc2").innerHTML = "Hash değer değişti!";
+            }
+
+        </script>
+    </body>
+</html>
