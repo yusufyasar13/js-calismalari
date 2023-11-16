@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            .ornek{
+                width: 70px;
+                height: 50px;
+                background-color: yellow;
+                padding-left: 25px;
+                padding-top: 25px;
+                padding-right: 25px;
+                padding-bottom: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="alan" class="ornek">JS</div>
+        <br /><br />
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+
+                
+        <script type="text/javascript" language="javascript">
+            //clientWidth :	Belge içerisindeki herhangi bir HTML elemanının içerik genişliği değerini elde etmek için kullanılır.
+            // clientHeight : Belge içerisindeki herhangi bir HTML elemanının içerik yüksekliği değerini elde etmek için kullanılır.
+            /*
+            Hesaplama
+            Genişlik : padding-left + genişlik + padding-right
+            Yükseklik : padding-top + yükseklik + padding-bottom
+            */
+
+            var deger1 = document.getElementById("alan").clientWidth;
+            var deger2 = document.getElementById("alan").clientHeight;
+            document.getElementById("sonuc1").innerHTML = deger1 + "px";
+            document.getElementById("sonuc2").innerHTML = deger2 + "px";
+            
+
+        </script>
+    </body>
+</html>
