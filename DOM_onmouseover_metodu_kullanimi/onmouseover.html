@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button id="alan1" onmouseover="ornek()">Üzerine Gel</button>
+        <br>
+        <img id="dunya" src="dunya.png" border="0" width="75" height="75" onmouseover="ornek2()">
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            //onmouseover :	Belge içerisindeki herhangi bir elemanın mouse (fare) ile üzerine gelindiğinde belirtilecek olan fonksiyon çalışır.
+
+            function ornek(){
+                document.getElementById("alan1").style.color = "blue";
+            }
+
+            function ornek2(){
+                document.getElementById("dunya").style.width = "250px";
+                document.getElementById("dunya").style.height = "250px";
+
+            }
+            
+        </script>
+    </body>
+</html>
