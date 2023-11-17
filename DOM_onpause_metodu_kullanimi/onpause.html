@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <video onpause="ornek1()" controls>
+            <source src="Video.mp4" type="video/mp4">
+            <source src="Video.webm" type="video/webm">
+            <source src="Video.ogg" type="video/ogg">
+        </video>
+        <audio src="Ses.mp3" onpause="ornek2()" controls></audio>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            // onpause : Medya elemanının yürütülmesi durdurulduğunda belirtilecek olan fonksiyon çalışır.
+
+            function ornek1(){
+                alert("Video durduruldu!");
+            }
+
+            function ornek2(){
+                alert("Ses durduruldu!");
+            }
+
+        </script>
+    </body>
+</html>
