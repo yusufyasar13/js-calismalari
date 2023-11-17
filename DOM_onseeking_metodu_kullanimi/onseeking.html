@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <video onseeking="ornek1()" controls>
+            <source src="Video.mp4" type="video/mp4">
+            <source src="Video.webm" type="video/webm">
+            <source src="Video.ogg" type="video/ogg">
+        </video>
+        <audio src="Ses.mp3" onseeking="ornek2()" controls></audio>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            //onseeking : Medya elemanının yürütme konumu kullanıcı tarafından haraket ettirildiğinde belirtilecek olan fonksiyon çalışır.
+
+
+            function ornek1(){
+                document.getElementById("sonuc").innerHTML += "Video oynatma konumu hareket ettirildi! <br>";
+            }
+
+            function ornek2(){
+                document.getElementById("sonuc").innerHTML += "Ses oynatma konumu hareket ettirildi! <br>";
+            }
+
+        </script>
+    </body>
+</html>
