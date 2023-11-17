@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <textarea id="alan" onblur="ornek1()"></textarea>
+        <br>
+        Adınız Soyadınız : <input type="text" onfocus="ornek2(this)" onblur="ornek3(this)">
+        <br>
+        E-Mail : <input type="text" onfocus="ornek2(this)" onblur="ornek3(this)">
+
+        <script type="text/javascript" language="javascript">
+            // onblur	:	Form içerisindeki bir elemanın odağından çıkıldığında belirtilecek olan fonksiyon çalışır.
+
+            function ornek1(){
+                alert("Odaktan Çıkıldı!")
+            }
+
+            function ornek2(para){
+                para.style.backgroundColor = "#f1f1f1";
+            }
+
+            function ornek3(para){
+                para.style.backgroundColor = "white";
+            }
+
+        </script>
+    </body>
+</html>
