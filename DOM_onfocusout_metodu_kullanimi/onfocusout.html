@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        Adınız Soyadınız : <input type="text" onfocusin="ornek1()" onfocusout="ornek2()">
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            // onfocusout 	:	Form içerisindeki bir elemanın odağından çıkılmak üzereyken belirtilecek olan fonksiyon çalışır.
+
+            function ornek1(deger){
+                document.getElementById("sonuc").innerHTML = "Odağa girilmek üzere!"
+            }
+
+            function ornek2(deger){
+                document.getElementById("sonuc").innerHTML = "Odaktan çıkılmak üzere!";
+            }
+
+        </script>
+    </body>
+</html>
