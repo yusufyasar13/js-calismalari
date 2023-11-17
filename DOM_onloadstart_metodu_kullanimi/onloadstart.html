@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <video onloadstart="ornek1()" controls>
+            <source src="Video.mp4" type="video/mp4">
+            <source src="Video.webm" type="video/webm">
+            <source src="Video.ogg" type="video/ogg">
+        </video>
+        <audio src="Ses.mp3" onloadstart="ornek2()" controls></audio>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            //onloadstart :	Medya elemanı verisi browser (tarayıcı) tarafından aranmaya başlandığında belirtilecek olan fonksiyon çalışır.
+
+
+            function ornek1(){
+                alert("Video verisi browser (tarayıcı) tarafından aranmaya başladı!");
+            }
+
+            function ornek2(){
+                alert("Ses verisi browser (tarayıcı) tarafından aranmaya başladı!");
+            }
+
+        </script>
+    </body>
+</html>
