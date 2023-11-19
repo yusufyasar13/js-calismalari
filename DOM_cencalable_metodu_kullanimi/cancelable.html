@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek(event)">Tıkla</button>
+        <div id="sonuc"></div>
+       
+        <script type="text/javascript" language="javascript">
+            // cancelable 	:	Belge içerisinde tanımlı event'ın (olayın) iptal edilebilir olup olmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+
+            function ornek(event){
+                var sonuc	=	event.cancelable;
+                document.getElementById("sonuc").innerHTML = sonuc;
+            }
+
+        </script>
+    </body>
+</html>
