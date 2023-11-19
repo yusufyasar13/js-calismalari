@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            .hedefalani{
+                background-color:yellow;
+                border:1px solid black;
+                text-align:center; 
+                width:500px;
+                height:250px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <span draggable="true">JS</span>
+        <br>
+        <div id="hedef" class="hedefalani" ondragover="ornek()"></div>
+        <div id="sonuc"></div>
+       
+        <script type="text/javascript" language="javascript">
+            // ondragover	:	Belge içerisindeki herhangi bir elemanın hedef kapsama alanı üzerindeyken belirtilecek olan fonksiyon çalışır.
+
+            function ornek(){
+                document.getElementById("hedef").style.backgroundColor = "#FFFFFF";
+                document.getElementById("hedef").style.borderColor = "blue";
+                document.getElementById("hedef").style.color = "blue";
+                document.getElementById("sonuc").innerHTML += "Eleman Hedef Üzerinde <br>";
+            }
+
+        </script>
+    </body>
+</html>
