@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body onclick="ornek(event)">
+
+        <div><span>Yusuf</span> Yaşar</div>
+        <div id="sonuc"></div>
+       
+        <script type="text/javascript" language="javascript">
+            // target 	:	Belge içerisinde tanımlı event'ı (olayı) tetikleyen herhangi bir HTML elemanının tag (etiket) adı referansını elde etmek için kullanılır.
+
+
+            function ornek(event){
+                var deger	=	event.target.nodeName;
+	            document.getElementById("sonuc").innerHTML = deger;
+            }
+
+        </script>
+    </body>
+</html>
