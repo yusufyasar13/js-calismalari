@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Dönüştür</button>
+        <button onclick="ornek2()">Çöz</button>
+        <br>
+        <div id="metin">Yusuf Yaşar JS</div>
+        <div id="donus"></div>
+        <div id="coz"></div>
+
+        <script type="text/javascript" language="javascript">
+            // atob() 	:	Pencere içerisindeki herhangi bir metnin base64 kodlamasına dönüştürülmüş karakterlerini çözerek değeri geriye döndürür.
+
+            function ornek(){
+                var deger = document.getElementById("metin").innerHTML;
+                var donus = window.btoa(encodeURIComponent(deger));
+                document.getElementById("donus").innerHTML = donus;
+            }
+
+            function ornek2(){
+                var deger = document.getElementById("donus").innerHTML;
+                var coz = decodeURIComponent(window.atob(deger));
+                document.getElementById("coz").innerHTML = coz;
+            }
+                        
+        </script>
+    </body>
+</html>
