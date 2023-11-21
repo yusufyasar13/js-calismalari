@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body id="alan">
+
+        <button onclick="ornek()">Ad Soyad</button>
+        <button onclick="ornek2()">Renk</button>
+        <br>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            // prompt() : Kullanıcıdan bilgi talep etmek için girdi penceresi oluşturmak için kullanılır.
+
+
+            function ornek(){
+                var veri = prompt("Merhaba lütfen adınızı belirtir misiniz?");
+                if(veri!=""){
+                    document.getElementById("sonuc").innerHTML = "Merhaba " + veri + " iyi günler...";
+                }else{
+                    ornek();
+                }
+            }
+            
+            function ornek2(){
+                var veri	=	prompt("Merhaba sayfa arkaplan rengi (siyah, kırmızı, sarı, mavi) ne olsun?");
+                if(veri=="siyah"){
+                    document.body.style.backgroundColor = "black";
+                }else if(veri=="kırmızı"){
+                    document.body.style.backgroundColor = "red";
+                }else if(veri=="sarı"){
+                    document.body.style.backgroundColor = "yellow";
+                }else if(veri=="mavi"){
+                    document.body.style.backgroundColor = "blue";
+                }else{
+                    ornek2();
+                }
+            }
+
+        </script>
+    </body>
+</html>
