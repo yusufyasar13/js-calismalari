@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="kapat()">Kapat</button>
+        <br>
+        <button onclick="pencere_ac()">Pencere Aç</button>
+        <button onclick="pencere_kapat()">Pencere Kapat</button>
+        <br>
+        Yusuf Yaşar JS
+
+        <script type="text/javascript" language="javascript">
+            // close() : Geçerli pencereyi kapatmak için kullanılır.
+
+            function kapat(){
+                window.close();
+            }
+
+            var islem;
+
+            function pencere_ac(){
+                islem =	window.open("https://www.google.com.tr", "Google", "width=1000,height=750,left=500", true);
+            }
+
+            function pencere_kapat(){
+                islem.close();
+            }
+            
+        </script>
+    </body>
+</html>
