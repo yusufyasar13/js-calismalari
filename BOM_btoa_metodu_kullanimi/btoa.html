@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Dönüştür</button>
+        <br>
+        <div id="metin">Yusuf Yaşar JS</div>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            // btoa() :	Pencere içerisindeki bir metnin tüm karakterlerini base64 kodlamasına dönüştürerek oluşturduğu değeri geriye döndürür.
+
+            function ornek(){
+                var deger = document.getElementById("metin").innerHTML;
+                var donus = window.btoa(encodeURIComponent(deger));
+                document.getElementById("sonuc").innerHTML = donus;
+            }
+                        
+        </script>
+    </body>
+</html>
