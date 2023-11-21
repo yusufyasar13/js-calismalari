@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Pencere</button>
+        <br>
+        <div id="sonuc1"></div>
+        <div id="sonuc2"></div>
+        
+
+        <script type="text/javascript" language="javascript">
+            // name	: Pencere adının referansını elde etmek etmek veya ayarlamak için kullanılır.
+
+            function ornek(){
+                var pencere	 =	window.open("", "Pencere", "width=400,height=200", true);
+                var ad = pencere.name;
+                document.getElementById("sonuc1").innerHTML = ad;
+                pencere.name = "Yeni Pencere Adı";
+                var ad = pencere.name;
+                document.getElementById("sonuc2").innerHTML = ad;
+
+            }
+            
+        </script>
+    </body>
+</html>
