@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body id="alan">
+
+        <button onclick="ornek()">Yazdır</button>
+        <button onclick="ornek2()">Renk</button>
+        <br>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            // confirm() :	Kullınıcı işlemlerinde onay penceresi oluşturmak için kullanılır.
+
+            function ornek(){
+                var onay = confirm("Sayfa Yazdırılacaktır, Devam etmek istiyormusunuz?");
+                if(onay==true){
+                    window.print();
+                    document.getElementById("sonuc").innerHTML = "Yazdırma işlemi onaylandı.";
+                }else{
+                    document.getElementById("sonuc").innerHTML = "Yazdırma işlemi iptal edildi.";
+                }
+            }
+            
+            function ornek2(){
+                var onay = confirm("Sayfayı renklendirmek istiyor musun?");
+                if(onay==true){
+                    document.getElementById("alan").style.backgroundColor = "red";
+                    document.getElementById("sonuc").innerHTML = "Renklendirme işlemi onaylandı.";
+                }else{
+                    document.getElementById("alan").style.backgroundColor = "white";
+                    document.getElementById("sonuc").innerHTML = "Renklendirme işlemi iptal edildi.";
+                }
+            }
+
+        </script>
+    </body>
+</html>
