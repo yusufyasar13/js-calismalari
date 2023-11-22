@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ac()">Aç</button>
+        <br>
+        <button onclick="uzak()">0'dan Uzaklaş</button>
+        <br>
+        <button onclick="yakin()">0'a Yakınlaş</button>
+        <br>
+        <button onclick="uzakX()">0'a Yatay Uzaklaş</button>
+        <br>
+        <button onclick="uzakY()">0'a Dikey Uzaklaş</button>
+        <br>
+        <button onclick="yakinX()">0'a Yatay Yakınlaş</button>
+        <br>
+        <button onclick="yakinY()">0'a Dikey Yakınlaş</button>
+
+
+        <script type="text/javascript" language="javascript">
+            // moveBy() : Pencerenin sol üst köşe koordinatı baz alınarak bilgisayar ekranına göre belirtilen konuma taşımak için kullanılır.
+
+            var pencere;
+
+            function ac(){
+                pencere		=	open("","JS", "width=100, height=100");
+            }
+
+            function uzak(){
+                pencere.moveBy(100, 100);
+            }
+
+            function yakin(){
+                pencere.moveBy(-100, -100);
+            }
+
+            function uzakX(){
+                pencere.moveBy(100, 0);
+            }
+
+            function uzakY(){
+                pencere.moveBy(0, 100);
+            }
+
+            function yakinX(){
+                pencere.moveBy(-100, 0);
+            }
+
+            function yakinY(){
+                pencere.moveBy(0, -100);
+            }
+
+
+        </script>
+    </body>
+</html>
