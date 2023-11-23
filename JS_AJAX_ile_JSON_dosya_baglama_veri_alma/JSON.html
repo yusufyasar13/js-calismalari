@@ -56,9 +56,9 @@
                 var istek	=	new XMLHttpRequest();
                 istek.onreadystatechange = function(){
                     if(this.readyState==4 && this.status==200){
-                        var jsondegerleri =	JSON.parse(this.responseText);
+                        var jsondeger =	JSON.parse(this.responseText);
                         var metindeger	= "";
-                        var setdegerleri = jsondegerleri.setler;
+                        var setdegerleri = jsondeger.setler;
                         var setdegerleriuzunlugu = setdegerleri.length;
                             for(var baslangic = 0; baslangic<setdegerleriuzunlugu; baslangic++){
                                 metindeger	+= "Adı : " + setdegerleri[baslangic].icerik + "<br />Kişi : " + setdegerleri[baslangic].kisi + "<br />Fiyat : " + setdegerleri[baslangic].fiyat + "<br /><br /><br />";
