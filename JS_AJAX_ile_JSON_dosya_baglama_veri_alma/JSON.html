@@ -15,6 +15,9 @@
         <button onclick="ornek()">Bilgileri Getir</button>
         <br>
         <div id="sonuc">Verileri Elde Etmek İçin Yukarıdaki Butona Tıklayınız!</div>
+        <br>
+        <button onclick="ornek2()">İlave Bilgileri Getir</button>
+        <div id="sonuc2">İlave Verileri Elde Etmek İçin Yukarıdaki Butona Tıklayınız!</div>
 
         <script type="text/javascript" language="javascript">
             function ornek(){
@@ -32,9 +35,9 @@
                         var dillerdeger	= jsondeger.diller;
                         var dillersonuc = "";
                         var say = dillerdeger.length;
-                        for(var bas = 0; bas<say;bas++){
-                            dillersonuc +="Dil: " + dillerdeger[bas].dil + "<br> Seviye: " + dillerdeger[bas].seviye + "<br><br>"
-                        }
+                            for(var bas = 0; bas<say;bas++){
+                                dillersonuc +="Dil: " + dillerdeger[bas].dil + "<br> Seviye: " + dillerdeger[bas].seviye + "<br><br>"
+                            }
 
                         metindeger	=	"İsim Soyisim : " + isimdeger + " " + soyisimdeger + "<br />Yaşı : " + yasdeger + "<br />Mesleği : " + meslekdeger + "<br />Yaşadığı Şehir : " + sehirdeger + "<br /><br />Bildiği Diller : <br /><br />" + dillersonuc;
 
@@ -45,6 +48,28 @@
                     }
                 };
                 istek.open("GET","veri.json",true);
+                istek.send();
+            }
+
+
+            function ornek2(){
+                var istek	=	new XMLHttpRequest();
+                istek.onreadystatechange = function(){
+                    if(this.readyState==4 && this.status==200){
+                        var jsondegerleri =	JSON.parse(this.responseText);
+                        var metindeger	= "";
+                        var setdegerleri = jsondegerleri.setler;
+                        var setdegerleriuzunlugu = setdegerleri.length;
+                            for(var baslangic = 0; baslangic<setdegerleriuzunlugu; baslangic++){
+                                metindeger	+= "Adı : " + setdegerleri[baslangic].icerik + "<br />Kişi : " + setdegerleri[baslangic].kisi + "<br />Fiyat : " + setdegerleri[baslangic].fiyat + "<br /><br /><br />";
+                            }
+                        
+                        document.getElementById("sonuc2").innerHTML = metindeger;
+                    }else{
+                        document.getElementById("sonuc2").innerHTML = "Hata Oluştu!";
+                    }
+                };
+                istek.open("GET", "veri2.json", true);
                 istek.send();
             }
             

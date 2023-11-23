@@ -1,0 +1,44 @@
+{
+	"setler":[
+		{
+			"icerik":"JS",
+			"kisi":"Yusuf",
+			"fiyat":"165,00 TL"
+		},
+		{
+			"icerik":"Html",
+			"kisi":"Yaşar",
+			"fiyat":"125,00 TL"
+		},
+		{
+			"icerik":"Css",
+			"kisi":"Onur",
+			"fiyat":"150,00 TL"
+		},
+		{
+			"icerik":"Php",
+			"kisi":"Ãœmit",
+			"fiyat":"175,00 TL"
+		},
+		{
+			"icerik":"MySql",
+			"kisi":"Serkan",
+			"fiyat":"125,00 TL"
+		},
+		{
+			"icerik":"Java",
+			"kisi":"Levent",
+			"fiyat":"225,00 TL"
+		},
+		{
+			"icerik":"Python",
+			"kisi":"Arif",
+			"fiyat":"215,00 TL"
+		},
+		{
+			"icerik":"PhpMyAdmin",
+			"kisi":"Halil",
+			"fiyat":"85,00 TL"
+		}
+	]
+}
