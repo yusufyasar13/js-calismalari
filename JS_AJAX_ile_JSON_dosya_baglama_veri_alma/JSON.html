@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Bilgileri Getir</button>
+        <br>
+        <div id="sonuc">Verileri Elde Etmek İçin Yukarıdaki Butona Tıklayınız!</div>
+
+        <script type="text/javascript" language="javascript">
+            function ornek(){
+                var istek = new XMLHttpRequest();
+                istek.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        var jsondeger = JSON.parse(this.responseText);
+                        var metindeger = "";
+                        var isimdeger = jsondeger.isim;
+                        var soyisimdeger = jsondeger.soyisim;
+                        var yasdeger = jsondeger.yas;
+                        var meslekdeger = jsondeger.meslek;
+                        var sehirdeger = jsondeger.sehir;
+
+                        var dillerdeger	= jsondeger.diller;
+                        var dillersonuc = "";
+                        var say = dillerdeger.length;
+                        for(var bas = 0; bas<say;bas++){
+                            dillersonuc +="Dil: " + dillerdeger[bas].dil + "<br> Seviye: " + dillerdeger[bas].seviye + "<br><br>"
+                        }
+
+                        metindeger	=	"İsim Soyisim : " + isimdeger + " " + soyisimdeger + "<br />Yaşı : " + yasdeger + "<br />Mesleği : " + meslekdeger + "<br />Yaşadığı Şehir : " + sehirdeger + "<br /><br />Bildiği Diller : <br /><br />" + dillersonuc;
+
+                        document.getElementById("sonuc").innerHTML = metindeger;
+
+                    }else{
+                        document.getElementById("sonuc").innerHTML = "Hata Oluştu!"; 
+                    }
+                };
+                istek.open("GET","veri.json",true);
+                istek.send();
+            }
+            
+        </script>
+    </body>
+</html>

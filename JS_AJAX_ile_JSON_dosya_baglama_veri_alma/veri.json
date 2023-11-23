@@ -1,0 +1,14 @@
+{
+    "isim":"Yusuf",
+    "soyisim":"Yaşar",
+    "yas":28,
+    "meslek":"Yazılımcı",
+    "sehir":"İstanbul",
+    "diller":[
+        {"dil":"JS", "seviye":"Uzman"},
+        {"dil":"PHS", "seviye":"Uzman"},
+        {"dil":"HTML", "seviye":"Uzman"},
+        {"dil":"CSS", "seviye":"Uzman"},
+        {"dil":"ASP", "seviye":"Uzman"}
+    ]
+}
