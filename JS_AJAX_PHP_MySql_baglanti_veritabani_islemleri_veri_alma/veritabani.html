@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <div style="text-align: right;"><select onchange="ornek(this.value)">
+            <option></option>
+            <option value="1">Yusuf Yaşar</option>
+            <option value="2">Elma Armut</option>
+            <option value="3">Selena Gomez</option>
+            <option value="4">Gedson Fernandes</option>
+            <option value="5">Burcu Biricik</option>
+        </select></div>
+        <br>
+        <div id="sonuc"></div>
+
+        <script type="text/javascript" language="javascript">
+            function ornek(gelendeger){
+                var istek = new XMLHttpRequest();
+                istek.onreadystatechange = function(){
+                    if(this.readyState==4 && this.status==200){
+                        document.getElementById("sonuc").innerHTML = this.responseText;
+                    }else{
+                        document.getElementById("sonuc").innerHTML = "Hata Oluştu!";
+                    }
+                }
+                istek.open("GET","kaynak.php?deger=" + gelendeger,true);
+                istek.send();
+            }
+            
+        </script>
+    </body>
+</html>
