@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="gezenalan1"><img src="nazarboncugu.png" width="25" height="26" style="border:none" /></div>
+        <span id="gezenalan2" style="color:red;">JS</span>
+        <br>
+        <div id="sonuc1" style="border: 1px solid black; width: 300px; height: 200px;"></div>
+        <div id="sonuc2" style="border: 1px solid black; width: 300px; height: 200px;"></div>
+
+
+        <script type="text/javascript" language="javascript">
+            var alan1	=	document.getElementById("gezenalan1");
+            alan1.style.position = "absolute";
+            document.getElementById("sonuc1").onmousemove = function(event){
+                alan1.style.left 	=	event.clientX + 15 + "px";
+                alan1.style.top 	 	=	event.clientY + "px";
+            }
+
+            var alan2	=	document.getElementById("gezenalan2");
+            alan2.style.position = "absolute";
+            document.getElementById("sonuc2").onmousemove = function(event){
+                alan2.style.left 	=	event.clientX + 15 + "px";
+                alan2.style.top 	 	=	event.clientY + "px";
+            }
+            
+        </script>
+    </body>
+</html>
