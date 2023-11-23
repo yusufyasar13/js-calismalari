@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Ders Konuları</title>
+        <link type="text/css" rel="stylesheet" href="">
+        <script type="text/javascript" language="javascript" src=""></script>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th,td{
+                padding: 5px;
+                width: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="ornek()">Bilgileri Tablo Olarak Getir</button>
+        <button onclick="ornek2()">Bilgileri Yazı Olarak Getir</button>
+        <br>
+        <table id="sonuc"></table>
+        <div id="sonuc2"></div>
+
+        <script type="text/javascript" language="javascript">
+
+            function ornek(){
+                var istek = new XMLHttpRequest();
+                istek.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        var tablo = "<tr style=\"background-color:#FFFCCC\"><th>İçerik</th><th>Kişi</th><th>Fiyat</th></tr>";
+                        var xmldeger = istek.responseXML;
+                        var etiket = xmldeger.getElementsByTagName("SETLER");
+                        var etiketsayisi = etike.length;
+                        for(var bas = 0; bas<etiketsayisi; bas++){
+                            var renkkontrol = bas % 2;
+                            if(renkkontrol==0){
+                                var renk = "style=\"background-color:#FFFFFF\"";
+                            }else{
+                                var renk = "style=\"background-color:#F1F1F1\"";
+                            }
+
+                            tablo += "<tr " + renk + "><td>" +
+                                etiket[bas].getElementsByTagName("ICERIK")[0].childNodes[0].nodeValue + "</td><td>" + 
+                                    etiket[bas].getElementsByTagName("KISI")[0].childNodes[0].nodeValue + "</td><td>" + 
+                                        etiket[bas].getElementsByTagName("FIYAT")[0].childNodes[0].nodeValue + 
+                                        "</td></tr>" 
+                        } 
+                    }else{
+                        document.getElementById("sonuc").innerHTML = "<tr><td>Hata Oluştu!</td></tr>";
+                    }
+                };
+                istek.open("GET","veri.xml",true);
+                istek.send();
+            }
+
+
+            function ornek2(){
+                var istek = new XMLHttpRequest();
+                istek.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        var metin = "";
+                        var xmldeger = istek.responseXML;
+                        var etiket = xmldeger.getElementsByTagName("SETLER");
+                        var etiketsayisi = etike.length;
+                        for(var bas = 0; bas<etiketsayisi; bas++){
+                            metin += etiket[bas].getElementsByTagName("ICERIK")[0].childNodes[0].nodeValue + "<br>" + etiket[bas].getElementsByTagName("KISI")[0].childNodes[0].nodeValue + "<br>" + etiket[bas].getElementsByTagName("FIYAT")[0].childNodes[0].nodeValue + "<br>" 
+                        }
+                        document.getElementById("sonuc2").innerHTML = metin;
+                    }else{
+                        document.getElementById("sonuc2").innerHTML = "Hata Oluştu!";
+                    }
+                };
+                istek.open("GET","veri.xml",true);
+                istek.send();
+            }
+
+        </script>
+    </body>
+</html>
